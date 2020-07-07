@@ -1,0 +1,102 @@
+/*MEDIDASS CONTENEDORES PRINCIPALES */
+/*STILOS Y FORMATO LETRA */
+.Header {
+  text-align: center; }
+
+.Header__Titulo {
+  font-family: Poppins;
+  color: #C84835;
+  font-size: 7vh;
+  font-weight: bold;
+  margin: auto; }
+
+.Header__Sub {
+  font-family: Poppins;
+  font-size: 3vh;
+  font-weight: bold;
+  margin: auto; }
+
+.Formulario {
+  width: 70vh;
+  height: 95vh;
+  background: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: inline-block; }
+
+.Formulario__Texto {
+  margin-left: 5vh;
+  font-family: Poppins;
+  font-size: 2vh; }
+
+.Formulario__Caja {
+  background: #E3E8EB;
+  margin-left: 5vh;
+  border-radius: 7px;
+  width: 50vh;
+  height: 5vh;
+  border: 1px solid #B5B5B5;
+  outline: none;
+  padding: 0.5vh; }
+
+.Boton {
+  font-family: Poppins;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  border: none;
+  width: 50vh;
+  height: 6vh;
+  margin-left: 5vh;
+  margin-top: 2vh; }
+  .Boton .txtboton {
+    font-family: Poppins; }
+
+.Boton__Registrar {
+  color: #fff;
+  background: #C8503F;
+  border-radius: 15px;
+  margin-top: 4vh; }
+  .Boton__Registrar:hover {
+    background: #e9503f;
+    color: #fff;
+    text-decoration: underline;
+    border: 1px solid #C8503F; }
+
+/*BOTONES PROVICIONALES DE REDES SOCIALES */
+.Boton__redes {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 2.5vh;
+  border-radius: 5px;
+  border: none; }
+
+.Boton__twitter {
+  background: #4286F5; }
+
+.Boton__facebook {
+  background: #4167B2; }
+
+/*FIN BOTONES PROVICIONALES */
+body {
+  background: #F5F5F5; }
+
+.Contenedor {
+  background: #F5F5F5;
+  min-height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Contenedor__Imagen {
+  width: 70vh;
+  height: 95vh;
+  background: #fff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: inline-block; }
+
+.Imagen {
+  width: 100%;
+  margin-top: 20vh; }
+
+/*# sourceMappingURL=Registro.css.map */
