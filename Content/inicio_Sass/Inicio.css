@@ -1,0 +1,482 @@
+/*VARIABLES CONTENEDORES */
+/*VARIABLES BOTONES (solo para seccion _Body.sass) */
+/*VARIABLES BOTONES (solo para seccion _Botons.sass) */
+/* VARIABLES IMAGENES */
+/*VARIABLES FONDO */
+/* VARIABLES TEXTO */
+.Container__Header {
+  background: linear-gradient(#C74733, #581677);
+  min-height: 97vh;
+  display: flex; }
+
+.Header__left {
+  display: inline-block;
+  width: 120vh; }
+
+.Header__right {
+  display: inline-block;
+  width: 94vh;
+  text-align: right;
+  margin-top: 6vh;
+  margin-right: 5vh; }
+
+.Header__Title {
+  color: #fff;
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 10vh;
+  margin: 0;
+  margin-left: 10vh;
+  margin-top: 15vh; }
+
+.Header__Subtitle {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 3vh;
+  margin: 0;
+  margin-left: 10vh;
+  margin-top: 2vh; }
+
+/*ESTILOS DE IMAGENES HEADER */
+.Left__ImgLogo {
+  width: 20%;
+  margin-left: 10vh;
+  margin-top: 5vh; }
+
+.Header__Img {
+  display: flex;
+  position: absolute; }
+
+.Right__ImgPhone {
+  width: 84%;
+  margin-left: auto;
+  margin-top: 2vh;
+  z-index: 1; }
+
+.Right__ImgReloj {
+  position: absolute;
+  margin-top: 26vh;
+  margin-left: 43vh;
+  width: 28vh;
+  z-index: 1; }
+
+.Right__ImgTable {
+  position: absolute;
+  margin-top: 62vh;
+  margin-left: 43vh;
+  width: 28vh;
+  z-index: 1; }
+
+.Right__ImgTramaOne {
+  position: absolute;
+  margin-top: 14vh;
+  margin-left: 30vh;
+  width: 22vh; }
+
+.Right__ImgTramaTwo {
+  position: absolute;
+  margin-top: 72vh;
+  margin-left: 63vh;
+  width: 22vh; }
+
+.Right__IconUser {
+  position: absolute;
+  margin-top: 22vh;
+  margin-left: 42.5vh;
+  width: 5vh;
+  z-index: 1; }
+
+.Right__IconCampana {
+  position: absolute;
+  margin-top: 24.4vh;
+  margin-left: 56vh;
+  width: 2vh;
+  z-index: 1; }
+
+.Right__Iconsearch {
+  position: absolute;
+  margin-top: 24.4vh;
+  margin-left: 60vh;
+  width: 2vh;
+  z-index: 1; }
+
+.Right__IconChat {
+  position: absolute;
+  margin-top: 24.5vh;
+  margin-left: 64vh;
+  width: 2vh;
+  height: 2vh;
+  z-index: 1; }
+
+.Right__IconMore {
+  position: absolute;
+  margin-top: 24.4vh;
+  margin-left: 68vh;
+  width: 2vh;
+  z-index: 1; }
+
+/**ESTILOS IMAGENES BODY */
+.Benefits__Img {
+  width: 2%;
+  border: 4vh solid green;
+  border-radius: 50%;
+  border-color: #FEADA6; }
+
+.Benefits__ImgScreen {
+  margin-top: 14vh;
+  width: 90%;
+  background: 0% 0% no-repeat padding-box;
+  box-shadow: 10px 10px 8px #6E6E6E1A;
+  border-radius: 16px; }
+
+.Img_Other {
+  border-radius: 100%; }
+
+.Table__Img {
+  width: 15vh; }
+
+/*BOTONES HEADER */
+/*LADO IZQUIERDO */
+.Boton {
+  color: #fff;
+  font-family: Poppins;
+  border: 1px solid #fff;
+  border-radius: 15px; }
+
+.Botons__left--One {
+  margin-left: 10vh;
+  background: linear-gradient(#F794A4, #ca6f55);
+  border: 1px solid #F794A4;
+  width: 12%;
+  height: 5%;
+  font-size: 2vh; }
+  .Botons__left--One:hover {
+    cursor: pointer;
+    color: #ca6f55;
+    background: #fff; }
+
+.Botons__left {
+  background: transparent;
+  margin-top: 5vh;
+  width: 19%;
+  height: 5%;
+  font-size: 2vh;
+  border: none; }
+  .Botons__left:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+
+/*BOTONES HEADER LADO DERECHO */
+.Botons__Right {
+  background: transparent;
+  border: none;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  font-size: 2.2vh;
+  text-decoration: none; }
+  .Botons__Right:hover {
+    cursor: pointer;
+    text-decoration: underline; }
+
+.Botons__Right--One {
+  background: linear-gradient(#00F2FE, #4FACFE);
+  font-size: 2.2vh;
+  border: none;
+  border-radius: 25px;
+  padding: 2vh;
+  height: 8vh; }
+  .Botons__Right--One:hover {
+    background: #4FACFE;
+    cursor: pointer; }
+
+/*BOTONES BODY */
+.SIlver__Button {
+  color: #939FA4;
+  width: 20vh;
+  height: 7vh;
+  background: #DBE0EF;
+  font-size: 2.5vh;
+  box-shadow: 0px 20px 50px #0000004D;
+  border-radius: 30px;
+  border: 1px solid #939FA4;
+  margin-top: 5vh; }
+
+.Gold__Button {
+  color: #939FA4;
+  width: 20vh;
+  height: 7vh;
+  background: #DBE0EF;
+  font-size: 2.5vh;
+  box-shadow: 0px 20px 50px #0000004D;
+  border-radius: 30px;
+  border: 1px solid #939FA4;
+  margin-top: 5vh; }
+
+.Bronze__Button {
+  color: #939FA4;
+  width: 20vh;
+  height: 7vh;
+  background: #DBE0EF;
+  font-size: 2.5vh;
+  box-shadow: 0px 20px 50px #0000004D;
+  border-radius: 30px;
+  border: 1px solid #939FA4;
+  margin-top: 5vh; }
+
+/* BOTONES DEL FOOD */
+.Botons__left--Two {
+  background: linear-gradient(#F794A4, #ca6f55);
+  border: 1px solid #F794A4;
+  width: 15vh;
+  height: 5vh;
+  font-size: 2vh; }
+  .Botons__left--Two:hover {
+    cursor: pointer;
+    color: #ca6f55;
+    background: #fff; }
+
+.Botons__Right--Two {
+  background: linear-gradient(#00F2FE, #4FACFE);
+  border: 1px solid #4FACFE;
+  width: 25vh;
+  height: 5vh;
+  font-size: 2vh; }
+  .Botons__Right--Two:hover {
+    background: #4FACFE;
+    cursor: pointer; }
+
+.Container__Body {
+  margin-top: 20vh; }
+
+/*CONTENDORES BODY */
+/*CONTENDOR BENFICIOS PARA TODOS */
+.Cont__Benefits {
+  text-align: center;
+  padding-left: 25vh;
+  padding-right: 25vh; }
+
+.Benefits__Title {
+  font-family: Poppins;
+  font-size: 8vh; }
+
+.Benefits__Subtitle {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #A7B0B4; }
+
+/*CONTENEDOR TRIO DE DIVS */
+.Cont_Table {
+  display: flex;
+  text-align: center; }
+
+.Trio--Divs {
+  font-family: Poppins;
+  display: inline-block;
+  width: 65vh;
+  height: 73vh;
+  margin-top: 15vh;
+  background: 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 8px #6E6E6E1A;
+  border-radius: 16px; }
+
+.Table__One {
+  background: #fff;
+  margin-left: 17vh;
+  margin-right: 5vh; }
+
+.Table__Three {
+  margin-left: 5vh;
+  margin-right: 17vh; }
+
+.Table__Title {
+  font-size: 4vh;
+  font-weight: bold;
+  margin-top: 15vh; }
+
+.Table__SubTitle {
+  font-size: 3vh;
+  font-weight: bold; }
+
+.Table__Texto {
+  font-size: 2.5vh;
+  color: #939FA4;
+  margin: 4vh; }
+
+.Other {
+  color: #939FA4; }
+
+/*CONTENDOR PRECIOS DE TyU */
+.Cont__Price {
+  text-align: center;
+  margin-top: 25vh;
+  padding-left: 25vh;
+  padding-right: 25vh; }
+
+.Price__Title {
+  font-family: Poppins;
+  font-size: 8vh; }
+
+.Price__Text {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #A7B0B4; }
+
+.Table__Price {
+  display: flex;
+  text-align: center; }
+
+.Trio--Price {
+  font-family: Poppins;
+  display: inline-block;
+  width: 60vh;
+  height: 60vh;
+  margin-top: 15vh;
+  background: 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 8px #6E6E6E1A;
+  border: 2px solid #DBE0EF; }
+
+.Price__Silver {
+  margin-right: 10vh; }
+  .Price__Silver:hover {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 42px 5px #5f5f5f;
+    -moz-box-shadow: 0px 0px 42px 5px #5f5f5f;
+    box-shadow: 0px 0px 42px 5px #5f5f5f; }
+    .Price__Silver:hover .SIlver__Button {
+      color: #DBE0EF;
+      background: transparent linear-gradient(#A498E4, #463699);
+      box-shadow: 0px 20px 50px #0000004D;
+      border-radius: 30px; }
+      .Price__Silver:hover .SIlver__Button:hover {
+        color: #fff;
+        background: #463699;
+        text-decoration: underline;
+        cursor: pointer; }
+
+.Price__Gold {
+  margin-top: 10vh; }
+  .Price__Gold:hover {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 42px 5px #efb810;
+    -moz-box-shadow: 0px 0px 42px 5px #efb810;
+    box-shadow: 0px 0px 42px 5px #efb810; }
+    .Price__Gold:hover .Gold__Button {
+      color: #DBE0EF;
+      background: transparent linear-gradient(#A498E4, #463699);
+      box-shadow: 0px 20px 50px #0000004D;
+      border-radius: 30px; }
+      .Price__Gold:hover .Gold__Button:hover {
+        color: #fff;
+        background: #463699;
+        text-decoration: underline;
+        cursor: pointer; }
+
+.Price__Bronze {
+  margin-left: 10vh; }
+  .Price__Bronze:hover {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 42px 5px #cd7f32;
+    -moz-box-shadow: 0px 0px 42px 5px #cd7f32;
+    box-shadow: 0px 0px 42px 5px #cd7f32; }
+    .Price__Bronze:hover .Bronze__Button {
+      color: #DBE0EF;
+      background: transparent linear-gradient(#A498E4, #463699);
+      box-shadow: 0px 20px 50px #0000004D;
+      border-radius: 30px; }
+      .Price__Bronze:hover .Bronze__Button:hover {
+        color: #fff;
+        background: #463699;
+        text-decoration: underline;
+        cursor: pointer; }
+
+.Silver__Title {
+  font-size: 5vh;
+  margin-top: 10vh;
+  color: #5F5F5F;
+  font-weight: bold; }
+
+.Silver__SubTitle {
+  font-size: 3vh;
+  font-weight: bold; }
+
+.Silver__Texto {
+  font-size: 2.5vh;
+  color: #939FA4; }
+
+.Gold__Title {
+  font-size: 5vh;
+  margin-top: 10vh;
+  color: #efb810;
+  font-weight: bold; }
+
+.Gold__SubTitle {
+  font-size: 3vh;
+  font-weight: bold; }
+
+.Gold__Texto {
+  font-size: 2.5vh;
+  color: #939FA4; }
+
+.Bronze__Title {
+  font-size: 5vh;
+  margin-top: 10vh;
+  color: #cd7f32;
+  font-weight: bold; }
+
+.Bronze__SubTitle {
+  font-size: 3vh;
+  font-weight: bold; }
+
+.Bronze__Texto {
+  font-size: 2.5vh;
+  color: #939FA4; }
+
+.Container__Food {
+  display: flex;
+  text-align: center; }
+
+.Cont__Configuration {
+  font-family: Poppins;
+  font-size: 4vh;
+  display: inline-block;
+  width: 60vh;
+  height: 20vh;
+  margin-left: 50vh;
+  margin-top: 8vh;
+  text-align: left; }
+
+.Food__Botons {
+  font-family: Poppins;
+  display: inline-block;
+  width: 60vh;
+  height: 20vh;
+  border-radius: 16px;
+  margin-top: 15vh;
+  text-align: right; }
+
+.Food_Final {
+  border-top: 1px solid #939FA4;
+  margin-top: 20vh; }
+
+.Food__Table {
+  font-family: Poppins;
+  border-collapse: separate;
+  border-spacing: 10vh 0vh;
+  width: 60%;
+  margin-left: 35vh; }
+
+.Food__Header {
+  font-weight: bold;
+  font-size: 2vh; }
+  .Food__Header tr td {
+    width: 38%; }
+
+.Food__Body {
+  color: #939FA4;
+  font-size: 1.5vh; }
+
+body {
+  background: #F4F6FD;
+  margin: 0; }
+
+/*# sourceMappingURL=Inicio.css.map */
