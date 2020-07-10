@@ -120,6 +120,15 @@
   background: #4167B2; }
 
 /*FIN BOTONES PROVICIONALES */
+@media screen and (min-width: 200px) and (max-width: 800px) {
+  body {
+    background: black; }
+
+  .Izquierda {
+    display: none; }
+
+  .Derecha {
+    border-radius: 15px; } }
 body {
   background-image: url(Img/Fondo.png);
   background-size: 100% 100%;
