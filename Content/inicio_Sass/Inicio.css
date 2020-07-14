@@ -147,21 +147,25 @@
   margin-left: 10vh;
   background: linear-gradient(#F794A4, #ca6f55);
   border: 1px solid #F794A4;
-  width: 12%;
-  height: 5%;
-  font-size: 2vh; }
+  width: 17%;
+  height: 8%;
+  font-size: 2vh;
+  border-radius: 15vh; }
   .Botons__left--One:hover {
     cursor: pointer;
-    color: #ca6f55;
     background: #fff; }
+    .Botons__left--One:hover .txtBoton {
+      color: #ca6f55; }
 
 .Botons__left {
   background: transparent;
   margin-top: 5vh;
-  width: 19%;
-  height: 5%;
+  margin-left: 2vh;
+  width: 22%;
+  height: 8%;
   font-size: 2vh;
-  border: none; }
+  border: 1px solid #fff;
+  border-radius: 15vh; }
   .Botons__left:hover {
     cursor: pointer;
     text-decoration: underline; }
@@ -184,7 +188,8 @@
   border: none;
   border-radius: 25px;
   padding: 2vh;
-  height: 8vh; }
+  height: 8vh;
+  margin-left: 2vh; }
   .Botons__Right--One:hover {
     background: #4FACFE;
     cursor: pointer; }
@@ -224,20 +229,23 @@
 .Botons__left--Two {
   background: linear-gradient(#F794A4, #ca6f55);
   border: 1px solid #F794A4;
-  width: 15vh;
-  height: 5vh;
-  font-size: 2vh; }
+  width: 20vh;
+  height: 8vh;
+  font-size: 2vh;
+  border-radius: 15vh; }
   .Botons__left--Two:hover {
     cursor: pointer;
-    color: #ca6f55;
     background: #fff; }
+    .Botons__left--Two:hover .txtBoton {
+      color: #ca6f55; }
 
 .Botons__Right--Two {
   background: linear-gradient(#00F2FE, #4FACFE);
   border: 1px solid #4FACFE;
   width: 25vh;
-  height: 5vh;
-  font-size: 2vh; }
+  height: 8vh;
+  font-size: 2vh;
+  border-radius: 15vh; }
   .Botons__Right--Two:hover {
     background: #4FACFE;
     cursor: pointer; }
@@ -277,13 +285,28 @@
   border-radius: 16px; }
 
 .Table__One {
-  background: #fff;
   margin-left: 17vh;
   margin-right: 5vh; }
+  .Table__One:hover {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px #463699;
+    -moz-box-shadow: 0px 0px 10px 0px #463699;
+    box-shadow: 0px 0px 10px 0px #463699; }
+
+.Table__Two:hover {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px #463699;
+  -moz-box-shadow: 0px 0px 10px 0px #463699;
+  box-shadow: 0px 0px 10px 0px #463699; }
 
 .Table__Three {
   margin-left: 5vh;
   margin-right: 17vh; }
+  .Table__Three:hover {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 10px 0px #463699;
+    -moz-box-shadow: 0px 0px 10px 0px #463699;
+    box-shadow: 0px 0px 10px 0px #463699; }
 
 .Table__Title {
   font-size: 4vh;
@@ -339,16 +362,18 @@
     -webkit-box-shadow: 0px 0px 10px 0px #5f5f5f;
     -moz-box-shadow: 0px 0px 10px 0px #5f5f5f;
     box-shadow: 0px 0px 10px 0px #5f5f5f; }
+    .Price__Silver:hover .txtBoton {
+      color: #DBE0EF; }
     .Price__Silver:hover .SIlver__Button {
-      color: #DBE0EF;
       background: transparent linear-gradient(#A498E4, #463699);
       box-shadow: 0px 20px 50px #0000004D;
       border-radius: 30px; }
       .Price__Silver:hover .SIlver__Button:hover {
         color: #fff;
         background: #463699;
-        text-decoration: underline;
         cursor: pointer; }
+  .Price__Silver .txtBoton {
+    color: #939FA4; }
 
 .Price__Gold {
   margin-top: 10vh; }
@@ -357,16 +382,18 @@
     -webkit-box-shadow: 0px 0px 10px 0px #efb810;
     -moz-box-shadow: 0px 0px 10px 0px #efb810;
     box-shadow: 0px 0px 10px 0px #efb810; }
+    .Price__Gold:hover .txtBoton {
+      color: #DBE0EF; }
     .Price__Gold:hover .Gold__Button {
-      color: #DBE0EF;
       background: transparent linear-gradient(#A498E4, #463699);
       box-shadow: 0px 20px 50px #0000004D;
       border-radius: 30px; }
       .Price__Gold:hover .Gold__Button:hover {
         color: #fff;
         background: #463699;
-        text-decoration: underline;
         cursor: pointer; }
+  .Price__Gold .txtBoton {
+    color: #939FA4; }
 
 .Price__Bronze {
   margin-left: 10vh; }
@@ -375,16 +402,18 @@
     -webkit-box-shadow: 0px 0px 10px 0px #cd7f32;
     -moz-box-shadow: 0px 0px 10px 0px #cd7f32;
     box-shadow: 0px 0px 10px 0px #cd7f32; }
+    .Price__Bronze:hover .txtBoton {
+      color: #DBE0EF; }
     .Price__Bronze:hover .Bronze__Button {
-      color: #DBE0EF;
       background: transparent linear-gradient(#A498E4, #463699);
       box-shadow: 0px 20px 50px #0000004D;
       border-radius: 30px; }
       .Price__Bronze:hover .Bronze__Button:hover {
         color: #fff;
         background: #463699;
-        text-decoration: underline;
         cursor: pointer; }
+  .Price__Bronze .txtBoton {
+    color: #939FA4; }
 
 .Silver__Title {
   font-size: 5vh;
@@ -448,11 +477,12 @@
   width: 60vh;
   height: 20vh;
   border-radius: 16px;
-  margin-top: 15vh;
+  margin-top: 12vh;
   text-align: right; }
 
 .Foot_Final {
-  border-top: 1px solid #939FA4; }
+  border-top: 1px solid #939FA4;
+  padding-top: 10vh; }
 
 .Foot__Table {
   font-family: Poppins;
@@ -475,7 +505,133 @@
   margin-top: 10vh; }
 
 /*RESOLUCIONES */
-@media screen and (min-width: 1201px) and (max-width: 1341px) {
+@media screen and (max-width: 1920px) {
+  .Right__ImgReloj {
+    margin-top: 20vh;
+    margin-left: 33vh;
+    width: 22vh;
+    z-index: 1; }
+
+  .Right__ImgTable {
+    margin-top: 48vh;
+    margin-left: 33vh;
+    width: 22vh;
+    z-index: 1; }
+
+  .Right__ImgTramaOne {
+    margin-top: 9vh;
+    margin-left: 20vh;
+    width: 22vh; }
+
+  .Right__ImgTramaTwo {
+    margin-top: 55vh;
+    margin-left: 45vh;
+    width: 22vh; }
+
+  .Right__IconUser {
+    margin-left: 32.5vh;
+    margin-top: 17vh; }
+
+  .Right__IconCampana {
+    margin-left: 43vh;
+    margin-top: 19vh; }
+
+  .Right__Iconsearch {
+    margin-left: 46vh;
+    margin-top: 19.2vh; }
+
+  .Right__IconChat {
+    margin-left: 48.5vh;
+    margin-top: 19.5vh; }
+
+  .Right__IconMore {
+    margin-left: 51vh;
+    margin-top: 19.4vh; } }
+@media screen and (min-width: 1600px) {
+  .Right__ImgReloj {
+    margin-top: 26vh;
+    margin-left: 41vh;
+    width: 26vh;
+    z-index: 1; }
+
+  .Right__ImgTable {
+    margin-top: 60vh;
+    margin-left: 41vh;
+    width: 26vh;
+    z-index: 1; }
+
+  .Right__ImgTramaOne {
+    margin-top: 13vh;
+    margin-left: 28vh;
+    width: 22vh; }
+
+  .Right__ImgTramaTwo {
+    margin-top: 72vh;
+    margin-left: 60vh;
+    width: 22vh; }
+
+  .Right__IconUser {
+    margin-left: 40.5vh;
+    margin-top: 21vh; }
+
+  .Right__IconCampana {
+    margin-left: 54vh;
+    margin-top: 24vh; }
+
+  .Right__Iconsearch {
+    margin-left: 57vh;
+    margin-top: 24.3vh; }
+
+  .Right__IconChat {
+    margin-left: 60.5vh;
+    margin-top: 24.5vh; }
+
+  .Right__IconMore {
+    margin-left: 64vh;
+    margin-top: 24.4vh; } }
+@media screen and (min-width: 1366px) {
+  .Right__ImgReloj {
+    margin-top: 27vh;
+    margin-left: 43vh;
+    width: 27vh;
+    z-index: 1; }
+
+  .Right__ImgTable {
+    margin-top: 62vh;
+    margin-left: 43vh;
+    width: 27vh;
+    z-index: 1; }
+
+  .Right__ImgTramaOne {
+    margin-top: 13vh;
+    margin-left: 30vh;
+    width: 22vh; }
+
+  .Right__ImgTramaTwo {
+    margin-top: 76vh;
+    margin-left: 60vh;
+    width: 22vh; }
+
+  .Right__IconUser {
+    margin-left: 43.5vh;
+    margin-top: 22vh; }
+
+  .Right__IconCampana {
+    margin-left: 57vh;
+    margin-top: 25vh; }
+
+  .Right__Iconsearch {
+    margin-left: 60vh;
+    margin-top: 25.3vh; }
+
+  .Right__IconChat {
+    margin-left: 63vh;
+    margin-top: 25.3vh; }
+
+  .Right__IconMore {
+    margin-left: 67vh;
+    margin-top: 25vh; } }
+@media screen and (min-width: 1201px) and (max-width: 1280px) {
   .Container__Header {
     min-height: 106vh; }
 
@@ -682,6 +838,9 @@
   .Botons__Right {
     display: none; }
 
+  #menu {
+    display: block; }
+
   .Botons__left--One {
     width: 14%;
     height: 6vh; }
@@ -782,7 +941,10 @@
     margin-left: 0vh; } }
 @media (min-width: 701px) and (max-width: 820px) {
   .Cont__Configuration {
-    margin-left: 2vh; } }
+    margin-left: 2vh; }
+
+  #menu {
+    display: block; } }
 @media (min-width: 500px) and (max-width: 700px) {
   .Container__Header {
     display: block;
@@ -818,6 +980,9 @@
   .Botons__left {
     width: 23%;
     height: 6vh; }
+
+  #menu {
+    display: block; }
 
   .Right__ImgPhone {
     margin-top: 0;
@@ -940,6 +1105,9 @@
   .Botons__left {
     width: 30%; }
 
+  #menu {
+    display: block; }
+
   .Right__ImgPhone {
     margin-top: 2vh;
     margin-left: 6vh; }
@@ -1018,11 +1186,65 @@
   .Table__Three {
     margin-left: 0;
     margin-right: 0; } }
+#menu {
+  text-align: center;
+  display: none; }
+
+#menu ul li {
+  background-color: #3A383B; }
+
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#menu ul a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3vh;
+  padding: 10px;
+  font-family: Poppins;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+#menu ul li {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0; }
+
+#menu ul li:hover {
+  background: #C74733; }
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0; }
+
+#menu ul ul li {
+  float: none;
+  width: 35vh; }
+
+#menu ul ul a {
+  line-height: 5vh;
+  padding: 10px 15px; }
+
+#menu ul li:hover > ul {
+  display: block; }
+
 body {
   background: #F4F6FD;
   margin: 0; }
 
 .Cont__Left__ImgLogo {
   text-align: left; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
 
 /*# sourceMappingURL=Inicio.css.map */

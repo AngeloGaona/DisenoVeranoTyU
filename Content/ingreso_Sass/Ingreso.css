@@ -63,6 +63,8 @@
     text-align: left;
     width: 40vh;
     padding: 1vh; }
+    .Derecha .Formulario:hover {
+      background: #d8d8d8; }
   .Derecha .Formulario__email {
     margin: 2.5vh 0 2.5vh 0; }
   .Derecha .Formulario__contrasena {
@@ -74,6 +76,13 @@
   text-align: right;
   margin-top: 5vh;
   margin-right: 15vh; }
+
+.Cont_ImgResolution {
+  display: none;
+  text-align: center; }
+
+.Cont_txtResolution {
+  display: none; }
 
 .Boton {
   font-family: Poppins;
@@ -95,9 +104,7 @@
   text-decoration-line: none; }
   .Boton__Ingresar:hover {
     background: #e9503f;
-    color: #fff;
-    text-decoration: underline;
-    border: 1px solid #C8503F; }
+    color: #fff; }
 
 /*BOTONES PROVICIONALES DE REDES SOCIALES */
 .Derecha__redes {
@@ -121,14 +128,30 @@
 
 /*FIN BOTONES PROVICIONALES */
 @media screen and (min-width: 200px) and (max-width: 800px) {
-  body {
-    background: black; }
-
   .Izquierda {
     display: none; }
 
   .Derecha {
-    border-radius: 15px; } }
+    background: linear-gradient(#C74733, #581677);
+    border-radius: 15px;
+    height: 96vh; }
+
+  .Derecha__txtGrande {
+    color: #fff;
+    margin: 2vh 0 2.5vh 14vh !important; }
+
+  .Derecha__txtpequeño {
+    color: #fff; }
+
+  .Cont_ImgResolution {
+    display: block; }
+
+  .Derecha__imgLogo {
+    width: 30%;
+    margin: 2vh; }
+
+  .Cont_txtResolution {
+    display: block; } }
 body {
   background-image: url(Img/Fondo.png);
   background-size: 100% 100%;
