@@ -1,0 +1,311 @@
+#quiz-time-left {
+  height: 100%;
+  color: #53E0D2;
+  background: #53E0D2;
+  transition: width 0.1s linear; }
+
+#page-mod-quiz-summary #quiz-timer {
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: -50px;
+  top: -50px; }
+
+#quiz-timer {
+  border: 1px solid #E4EAF0;
+  text-indent: -9999px;
+  display: block;
+  font-size: 0px;
+  height: 35px; }
+
+#chartdiv {
+  width: 100%;
+  height: 500px; }
+
+body {
+  margin: 0;
+  background: #eee; }
+
+a {
+  text-decoration: none; }
+
+.Fondo_Home {
+  width: 200vh;
+  position: absolute;
+  z-index: -1;
+  left: -83vh;
+  bottom: -8vh; }
+
+.Logo_Home {
+  width: 12vh;
+  position: absolute;
+  margin-left: 12vh; }
+
+.Trama {
+  width: 140vh;
+  z-index: -2;
+  position: absolute;
+  right: 0; }
+
+.Campana {
+  position: absolute;
+  right: 32vh;
+  top: 4vh;
+  width: 2.5vh; }
+
+.Chat {
+  position: absolute;
+  right: 24vh;
+  top: 4.5vh;
+  width: 3vh; }
+
+.Ajust {
+  position: absolute;
+  right: 16vh;
+  top: 4.5vh;
+  width: 2.5vh; }
+
+.vertical-menu {
+  background: #fff;
+  width: 7vh;
+  min-height: 100vh;
+  text-align: center; }
+
+.vertical-menu a {
+  display: block;
+  text-decoration: none; }
+
+.Content__Img {
+  padding-top: 2vh;
+  padding-bottom: 2vh; }
+  .Content__Img:hover {
+    background-color: #C74733;
+    width: 8vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh; }
+
+.Estatic {
+  background: #C74733; }
+
+.Menu__IconUser {
+  margin-bottom: 10vh; }
+  .Menu__IconUser:hover {
+    background: #fff _ !important; }
+
+.Menu__Img {
+  width: 3vh;
+  height: 3vh; }
+
+.Menu__IconUser {
+  width: 100%;
+  text-align: center; }
+
+.Jobs {
+  background: #fff;
+  width: 40vh;
+  border-radius: 2vh;
+  text-align: center;
+  position: absolute;
+  top: 18vh;
+  left: 15vh; }
+
+.Jobs__Title {
+  padding-top: 1vh;
+  font-family: Poppins;
+  font-size: 5vh;
+  font-weight: bold; }
+
+.Cont__Jobs {
+  background: #E3E8EB;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  border-radius: 1vh;
+  padding: 2vh; }
+
+.Jobs__Subtitle {
+  font-family: Poppins;
+  color: #A0A0A0;
+  font-size: 3vh;
+  text-decoration: none; }
+
+.Cont__Clock {
+  background: #fff;
+  font-family: Poppins;
+  width: 50vh;
+  border-radius: 2vh;
+  text-align: center;
+  position: absolute;
+  top: 18vh;
+  left: 62vh; }
+
+.Clock {
+  display: inline-flex; }
+
+.Clock__Time {
+  display: inline-flex; }
+
+.txtTime {
+  font-size: 5vh;
+  padding-top: 1vh;
+  font-weight: bold; }
+
+.Clock__Actually {
+  font-size: 2.5vh; }
+
+.Clock__Day {
+  margin-left: 8vh;
+  margin-right: 8vh;
+  font-size: 2.5vh; }
+
+.Clock__Week {
+  text-align: right;
+  font-size: 2.5vh; }
+
+.Time__Actually {
+  font-size: 3vh; }
+
+.Time__Day {
+  margin-left: 4vh;
+  margin-right: 4vh;
+  font-size: 3vh; }
+
+.Time__Week {
+  font-size: 3vh; }
+
+.Boton__Start {
+  background: #51197C;
+  border: 1px solid #51197C;
+  border-radius: 50%;
+  width: 21vh;
+  padding: 3vh; }
+  .Boton__Start .txtBoton {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 3vh; }
+  .Boton__Start:hover {
+    cursor: pointer; }
+
+.Boton__Pause {
+  background: #FFAA00;
+  border: 1px solid #FFAA00;
+  border-radius: 50%;
+  padding: 3vh; }
+  .Boton__Pause .txtBoton {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 2.5vh; }
+  .Boton__Pause:hover {
+    cursor: pointer; }
+
+.txtClock {
+  text-align: left;
+  margin-left: 2vh; }
+
+.Notes {
+  font-family: Poppins;
+  width: 42vh;
+  padding: 2vh; }
+
+/*Reloj */
+.date {
+  font-family: Poppins;
+  font-size: 2vh;
+  font-weight: bold;
+  background: #ccc;
+  width: 36vh;
+  margin-left: 4vh;
+  opacity: 0.6;
+  padding: 2vh;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  margin-bottom: 1vh; }
+
+.clock {
+  font-family: Poppins;
+  font-size: 4vh;
+  font-weight: bold;
+  background: #ccc;
+  width: 36vh;
+  margin-left: 4vh;
+  opacity: 0.6;
+  padding: 2vh;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  margin-bottom: 1vh; }
+
+/*Reloj */
+.Boton__Create {
+  font-family: Poppins;
+  font-size: 2vh;
+  background: #148B83;
+  width: 50vh;
+  height: 7vh;
+  border-radius: 15vh;
+  border: 1px solid #148B83;
+  position: absolute;
+  top: 15vh;
+  left: 150vh; }
+
+.txtBoton {
+  color: #fff; }
+
+.Cont__Jobs__Prioritary {
+  background: #fff;
+  width: 50vh;
+  height: 68vh;
+  border-radius: 5vh;
+  padding: 1vh;
+  position: absolute;
+  top: 27vh;
+  left: 150vh;
+  overflow-y: scroll; }
+
+.Jobs__Prioritary__Title {
+  padding-top: 1vh;
+  font-family: Poppins;
+  font-size: 4vh;
+  font-weight: bold;
+  margin-left: 2vh; }
+
+.Jobs__Prioritary__Date {
+  padding-top: 1vh;
+  font-family: Poppins;
+  font-size: 2.2vh;
+  margin-left: 3vh; }
+
+.Jobs__txt {
+  font-family: Poppins;
+  font-size: 2.2vh;
+  font-weight: bold;
+  margin-left: 2vh; }
+
+.JobOne {
+  background: #7F56B4;
+  border-radius: 1vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  padding: 1vh; }
+
+.JobTwo {
+  background: #FF6E6E;
+  border-radius: 1vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  padding: 1vh; }
+
+.JobThree {
+  background: #2BC8D8;
+  border-radius: 1vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  padding: 1vh; }
+
+.JobFour {
+  background: #FF6E6E;
+  border-radius: 1vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  padding: 1vh; }
+
+/*# sourceMappingURL=Crono.css.map */
