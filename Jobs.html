@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jobs</title>
+	<link rel="stylesheet" type="text/css" href="Content/jobs_Sass/Jobs.css">
+
+	<!--FUENTES-->
+	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+	<img class="Fondo_Home" src="Content/Img/Fondo_Home.png">
+	<img class="Logo_Home" src="Content/Img/Logo_Home.png">
+	<img class="Trama" src="Content/Img/TramaTwo.png" >
+
+	<img class="Campana" src="Content/Img/Icons/Group40.png">
+	<img class="Chat" src="Content/Img/Icons/chat.png">
+	<img class="Ajust" src="Content/Img/Icons/Group4.png" >
+
+
+	<div class="vertical-menu">
+		<a class="Menu__IconUser" href="#">
+			<img class="Menu__IconUser" src="Content/Img/Icons/User.png">
+	 	</a>
+		<a class="Content__Img " href="Cronometro.html">
+			<img class="Menu__Img" src="Content/Img/Icons/menu-1.png">
+	  	</a>
+	  	<a class="Content__Img Estatic" href="Jobs.html">
+			<img class="Menu__Img" src="Content/Img/Icons/menu-2.png">
+	  	</a>
+	  	<a class="Content__Img" href="#">
+	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-3.png">
+	  	</a>
+	  	<a class="Content__Img" href="#">
+	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-4.png">
+	  	</a>
+	  	<a class="Content__Img" href="#">
+	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-5.png">
+	  	</a>
+	  	<a class="Content__Img" href="#">
+	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-6.png">
+	  	</a>
+	</div>
+
+	<div class="Jobss">
+		<p class="Jobss__Title">Administración de lugares</p>
+		
+		<div class="TopBar">
+			<a class="Boton Boton__add" href="#">
+				+ ADICIONAR
+			</a>
+			
+			<div class="SearchBar">
+				<img class="Icons__Ubication" src="Content/Img/Icons/alfiler.png">
+				<input class="Sub__SearchBar" type="text" placeholder="Buscar" ></input>
+				<img class="Icons__Search" src="Content/Img/Icons/buscar.png">
+			</div>
+		</div>
+
+		<div class="BottomBar">
+			<div class="BottomBar__Cont">
+				<img class="Folder__One" src="Content/Img/carpetas-02.png">
+				<p class="Jobs__Route" >
+					Lugares >  
+				</p>
+			</div>
+			<div class="Cont__Jobss">
+				<table class="TblTable">
+					<thead class="TblHeader">
+						<tr>
+							<th>Nombre</th>
+							<th>Dirección</th>
+							<th>Asignación</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="TblBody">
+						<tr>
+							<td>
+								<img class="Folder__Two" src="Content/Img/carpetas-03.png">
+								<p class="txtJobs"> > COLOMBIA</p>
+							</td>
+
+							<td></td>
+							<td></td>
+
+							<td class="Botons__Jobs">
+								<a class="Add__Jobs" href="#">
+									<img class="Icon Icons__Plus" src="Content/Img/Icons/plus.png">
+								</a>
+
+								<a id="myBtn" class="Edit__Jobs" href="#">
+									<img class="Icon Icons__Edit" src="Content/Img/Icons/edit.png">
+								</a>
+
+								<a class="Delete__Jobs" href="#">
+									<img class="Icon Icons__Delete" src="Content/Img/Icons/delete.png">
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div id="myModal" class="modal">
+
+			<div class="modal-content">
+				<p class="Modal__Title">
+					Editar
+
+					<span class="close">&times;</span>
+				</p>
+				
+				<div class="Name">
+					<p class="Modal__Name"> Nombre </p>
+	    			<div class="Cont__Name">
+	    				<img class="Icons__Name" src="Content/Img/Icons/alfiler.png">
+						<input class="Sub__Name" type="text"></input>
+					</div>
+				</div>
+				
+				<div class="ShortName">
+					<p class="Modal__ShortName"> Nombre Corto </p>
+					<div class="Cont__ShortName">
+						<img class="Icons__ShortName" src="Content/Img/Icons/alfiler.png">
+						<input class="Sub__ShortName" type="text" maxlength="3"></input>
+					</div>
+				</div>
+
+				<div class="Modal__CheckBox">
+					
+					<table class="TblTable Modal__Tbl">
+						<thead class="TblHeader">
+							<tr>
+								<th>Facturable</th>
+								<th>Velocidad</th>
+								<th>Asignar Usuario</th>
+							</tr>
+						</thead>
+						<tbody class="TblBody">
+							<tr>
+								<td>
+									<label class="Cont__CheckBox Billable">
+								  		<input type="checkbox" checked="checked">
+								  		<span class="checkmark"></span>
+									</label>
+								</td>
+								<td>
+									<label class="Cont__CheckBox Velocity">
+								  		<input type="checkbox" checked="checked">
+								  		<span class="checkmark"></span>
+									</label>
+								</td>
+								<td>
+									<label class="Cont__CheckBox Assignment">
+								  		<input type="checkbox" checked="checked">
+								  		<span class="checkmark"></span>
+									</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+</html>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
