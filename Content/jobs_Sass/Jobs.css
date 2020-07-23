@@ -1,3 +1,81 @@
+body {
+  margin: 0;
+  background: #eee; }
+
+a {
+  text-decoration: none; }
+
+.Fondo_Home {
+  width: 200vh;
+  position: absolute;
+  z-index: -1;
+  left: -83vh;
+  bottom: -8vh; }
+
+.Logo_Home {
+  width: 12vh;
+  position: absolute;
+  margin-left: 12vh; }
+
+.Trama {
+  width: 108vh;
+  z-index: -2;
+  position: absolute;
+  right: 0; }
+
+.Campana {
+  position: absolute;
+  right: 32vh;
+  top: 4vh;
+  width: 2.5vh; }
+
+.Chat {
+  position: absolute;
+  right: 24vh;
+  top: 4.5vh;
+  width: 3vh; }
+
+.Ajust {
+  position: absolute;
+  right: 16vh;
+  top: 4.5vh;
+  width: 2.5vh; }
+
+.vertical-menu {
+  background: #fff;
+  width: 7vh;
+  min-height: 100vh;
+  text-align: center; }
+
+.vertical-menu a {
+  display: block;
+  text-decoration: none; }
+
+.Content__Img {
+  padding-top: 2vh;
+  padding-bottom: 2vh; }
+  .Content__Img:hover {
+    background-color: #C74733;
+    width: 8vh;
+    border-top-right-radius: 1vh;
+    border-bottom-right-radius: 1vh; }
+
+.Estatic {
+  background: #C74733; }
+
+.Menu__IconUser {
+  margin-bottom: 10vh; }
+  .Menu__IconUser:hover {
+    background: #fff _ !important; }
+
+.Menu__Img {
+  width: 3vh;
+  height: 3vh; }
+
+.Menu__IconUser {
+  width: 100%;
+  text-align: center; }
+
 .Jobss {
   font-family: Poppins;
   background: #fff;
