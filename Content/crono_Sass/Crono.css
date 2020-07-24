@@ -1,34 +1,3 @@
-#quiz-time-left {
-  height: 100%;
-  color: #53E0D2;
-  background: #53E0D2;
-  transition: width 0.1s linear; }
-
-#page-mod-quiz-summary #quiz-timer {
-  text-align: center;
-  display: none;
-  position: absolute;
-  left: -50px;
-  top: -50px; }
-
-#quiz-timer {
-  border: 1px solid #E4EAF0;
-  text-indent: -9999px;
-  display: block;
-  font-size: 0px;
-  height: 35px; }
-
-#chartdiv {
-  width: 100%;
-  height: 500px; }
-
-body {
-  margin: 0;
-  background: #eee; }
-
-a {
-  text-decoration: none; }
-
 .Fondo_Home {
   width: 200vh;
   position: absolute;
@@ -43,6 +12,7 @@ a {
 
 .Trama {
   width: 140vh;
+  height: 125vh;
   z-index: -2;
   position: absolute;
   right: 0; }
@@ -85,7 +55,10 @@ a {
     border-bottom-right-radius: 1vh; }
 
 .Estatic {
-  background: #C74733; }
+  background: #C74733;
+  width: 8vh;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh; }
 
 .Menu__IconUser {
   margin-bottom: 10vh; }
@@ -100,34 +73,66 @@ a {
   width: 100%;
   text-align: center; }
 
-.Jobs {
-  background: #fff;
-  width: 40vh;
-  border-radius: 2vh;
-  text-align: center;
+.date {
+  font-family: Poppins;
+  font-size: 2vh;
+  font-weight: bold;
+  background: #ccc;
+  width: 36vh;
+  margin-left: 4vh;
+  opacity: 0.6;
+  padding: 2vh;
+  border-top-left-radius: 2vh;
+  border-top-right-radius: 2vh;
+  margin-bottom: 1vh; }
+
+.clock {
+  font-family: Poppins;
+  font-size: 4vh;
+  font-weight: bold;
+  background: #ccc;
+  width: 36vh;
+  margin-left: 4vh;
+  opacity: 0.6;
+  padding: 2vh;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  margin-bottom: 1vh; }
+
+.Boton__Start {
+  background: #51197C;
+  border: 1px solid #51197C;
+  border-radius: 50%;
+  width: 21vh;
+  height: 21vh;
+  padding: 3vh; }
+  .Boton__Start .txtBoton {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 3vh; }
+  .Boton__Start:hover {
+    cursor: pointer; }
+
+.Boton__Pause {
+  background: #FFAA00;
+  border: 1px solid #FFAA00;
+  border-radius: 50%;
+  padding: 3vh;
+  width: 15vh;
+  height: 15vh;
   position: absolute;
-  top: 18vh;
-  left: 15vh; }
+  right: 5vh;
+  bottom: 19.5vh; }
+  .Boton__Pause .txtBoton {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 2.5vh; }
+  .Boton__Pause:hover {
+    cursor: pointer; }
 
-.Jobs__Title {
-  padding-top: 1vh;
-  font-family: Poppins;
-  font-size: 5vh;
-  font-weight: bold; }
-
-.Cont__Jobs {
-  background: #E3E8EB;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-bottom: 1vh;
-  border-radius: 1vh;
-  padding: 2vh; }
-
-.Jobs__Subtitle {
-  font-family: Poppins;
-  color: #A0A0A0;
-  font-size: 3vh;
-  text-decoration: none; }
+.txtClock {
+  text-align: left;
+  margin-left: 2vh; }
 
 .Cont__Clock {
   background: #fff;
@@ -146,6 +151,7 @@ a {
   display: inline-flex; }
 
 .txtTime {
+  color: #414D55;
   font-size: 5vh;
   padding-top: 1vh;
   font-weight: bold; }
@@ -173,68 +179,14 @@ a {
 .Time__Week {
   font-size: 3vh; }
 
-.Boton__Start {
-  background: #51197C;
-  border: 1px solid #51197C;
-  border-radius: 50%;
-  width: 21vh;
-  padding: 3vh; }
-  .Boton__Start .txtBoton {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 3vh; }
-  .Boton__Start:hover {
-    cursor: pointer; }
-
-.Boton__Pause {
-  background: #FFAA00;
-  border: 1px solid #FFAA00;
-  border-radius: 50%;
-  padding: 3vh; }
-  .Boton__Pause .txtBoton {
-    color: #fff;
-    font-family: Poppins;
-    font-size: 2.5vh; }
-  .Boton__Pause:hover {
-    cursor: pointer; }
-
-.txtClock {
-  text-align: left;
-  margin-left: 2vh; }
-
 .Notes {
+  background: #E4EAF0;
+  border: 1vh solid #E4EAF0;
+  border-radius: 2vh;
   font-family: Poppins;
   width: 42vh;
   padding: 2vh; }
 
-/*Reloj */
-.date {
-  font-family: Poppins;
-  font-size: 2vh;
-  font-weight: bold;
-  background: #ccc;
-  width: 36vh;
-  margin-left: 4vh;
-  opacity: 0.6;
-  padding: 2vh;
-  border-top-left-radius: 2vh;
-  border-top-right-radius: 2vh;
-  margin-bottom: 1vh; }
-
-.clock {
-  font-family: Poppins;
-  font-size: 4vh;
-  font-weight: bold;
-  background: #ccc;
-  width: 36vh;
-  margin-left: 4vh;
-  opacity: 0.6;
-  padding: 2vh;
-  border-bottom-left-radius: 2vh;
-  border-bottom-right-radius: 2vh;
-  margin-bottom: 1vh; }
-
-/*Reloj */
 .Boton__Create {
   font-family: Poppins;
   font-size: 2vh;
@@ -246,6 +198,8 @@ a {
   position: absolute;
   top: 15vh;
   left: 150vh; }
+  .Boton__Create:hover {
+    cursor: pointer; }
 
 .txtBoton {
   color: #fff; }
@@ -278,34 +232,105 @@ a {
   font-family: Poppins;
   font-size: 2.2vh;
   font-weight: bold;
-  margin-left: 2vh; }
+  margin-left: 2vh;
+  opacity: 1; }
 
 .JobOne {
-  background: #7F56B4;
+  background: rgba(127, 86, 180, 0.48);
   border-radius: 1vh;
   margin-left: 3vh;
   margin-right: 3vh;
   padding: 1vh; }
 
 .JobTwo {
-  background: #FF6E6E;
+  background: rgba(255, 110, 110, 0.48);
   border-radius: 1vh;
   margin-left: 3vh;
   margin-right: 3vh;
   padding: 1vh; }
 
 .JobThree {
-  background: #2BC8D8;
+  background: rgba(43, 200, 216, 0.48);
   border-radius: 1vh;
   margin-left: 3vh;
   margin-right: 3vh;
   padding: 1vh; }
 
 .JobFour {
-  background: #FF6E6E;
+  background: rgba(127, 86, 180, 0.48);
   border-radius: 1vh;
   margin-left: 3vh;
   margin-right: 3vh;
   padding: 1vh; }
+
+.Jobs {
+  background: #fff;
+  width: 40vh;
+  border-radius: 2vh;
+  text-align: center;
+  position: absolute;
+  top: 18vh;
+  left: 15vh; }
+
+.Jobs__Title {
+  padding-top: 1vh;
+  font-family: Poppins;
+  color: #414D55;
+  font-size: 5vh;
+  font-weight: bold; }
+
+.Cont__Jobs {
+  background: #E3E8EB;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 1vh;
+  border-radius: 1vh;
+  padding: 2vh; }
+
+.Jobs__Subtitle {
+  font-family: Poppins;
+  color: #A0A0A0;
+  font-size: 3vh;
+  text-decoration: none; }
+
+#quiz-time-left {
+  height: 100%;
+  color: #53E0D2;
+  background: #53E0D2;
+  transition: width 0.1s linear; }
+
+#page-mod-quiz-summary #quiz-timer {
+  text-align: center;
+  display: none;
+  position: absolute;
+  left: -50px;
+  top: -50px; }
+
+#quiz-timer {
+  border: 1px solid #E4EAF0;
+  text-indent: -9999px;
+  display: block;
+  font-size: 0px;
+  height: 35px; }
+
+#chartdiv {
+  width: 100%;
+  height: 500px; }
+
+body {
+  margin: 0;
+  background: #eee; }
+
+a {
+  text-decoration: none; }
+
+/*.ImgTrama
+ * position: absolute
+ * min-width: 209vh
+ * min-height: 119vh
+ * background-repeat: no-repeat 
+ * background: url(Img/TramaTwo.png) no-repeat center center fixed 
+ * background-size: 100% 100% 
+ * z-index: -2 */
 
 /*# sourceMappingURL=Crono.css.map */
