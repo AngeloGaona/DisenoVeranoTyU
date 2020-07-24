@@ -1,10 +1,3 @@
-body {
-  margin: 0;
-  background: #eee; }
-
-a {
-  text-decoration: none; }
-
 .Fondo_Home {
   width: 200vh;
   position: absolute;
@@ -61,12 +54,15 @@ a {
     border-bottom-right-radius: 1vh; }
 
 .Estatic {
-  background: #C74733; }
+  background: #C74733;
+  width: 8vh;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh; }
 
 .Menu__IconUser {
   margin-bottom: 10vh; }
   .Menu__IconUser:hover {
-    background: #fff _ !important; }
+    background: #fff !important; }
 
 .Menu__Img {
   width: 3vh;
@@ -76,60 +72,12 @@ a {
   width: 100%;
   text-align: center; }
 
-.Jobss {
-  font-family: Poppins;
-  background: #fff;
-  width: 178vh;
-  min-height: 70vh;
-  border-radius: 2vh;
-  position: absolute;
-  top: 18vh;
-  left: 15vh; }
-
-.Jobss__Title {
-  padding-left: 4vh;
-  font-family: Poppins;
-  font-size: 5vh;
-  font-weight: bold;
-  color: #414D55; }
-
-.TopBar {
-  display: inline-flex;
-  padding-left: 4vh; }
-
-.Boton__add {
-  font-family: Poppins;
-  font-size: 2vh;
-  background: #7A40F2;
-  color: #fff;
-  border-radius: 15vh;
-  border: 1px solid #7A40F2;
-  text-align: center;
-  padding: 1vh;
-  width: 20vh;
-  height: 3vh; }
-
-.SearchBar {
-  font-family: Poppins;
-  margin-left: 83vh;
-  background: #F8F8F8;
-  border-radius: 2vh;
-  padding: 1vh; }
-
 .Icons__Ubication {
   width: 4vh;
   opacity: 0.5;
   position: relative;
   top: 1vh;
   margin-right: 2vh; }
-
-.Sub__SearchBar {
-  width: 50vh;
-  height: 4vh;
-  font-family: Poppins;
-  font-size: 2vh;
-  border: none;
-  background: #F8F8F8; }
 
 .Icons__Search {
   width: 4vh;
@@ -138,56 +86,6 @@ a {
   top: 1vh;
   margin-left: 2vh; }
 
-.BottomBar {
-  padding-left: 4vh;
-  font-family: Poppins; }
-
-.BottomBar__Cont {
-  margin-top: 2vh;
-  margin-left: 2vh; }
-
-.Folder__One {
-  width: 5vh; }
-
-.Jobs__Route {
-  display: inline-flex;
-  font-size: 2.4vh;
-  position: absolute;
-  top: 24.9vh;
-  left: 12vh; }
-
-.Cont__Jobss {
-  background: #F5F2FB;
-  min-height: 30vh;
-  font-family: Poppins;
-  border-radius: 2vh;
-  padding: 2vh;
-  margin-right: 4vh; }
-
-.TblTable {
-  width: 100%;
-  border: 1;
-  cellpadding: 0;
-  cellspacing: 0; }
-
-.TblHeader tr th {
-  font-size: 3vh;
-  font-weight: normal;
-  text-align: left; }
-
-.TblBody tr td {
-  font-size: 2vh;
-  font-weight: normal; }
-
-.Folder__Two {
-  width: 5vh; }
-
-.txtJobs {
-  display: inline-flex; }
-
-.Botons__Jobs {
-  text-align: center; }
-
 .Icon {
   margin-right: 4vh;
   width: 3vh;
@@ -195,6 +93,76 @@ a {
   border-radius: 5vh; }
   .Icon:hover {
     background: #dfdde2; }
+
+.Icons__Name {
+  width: 4vh;
+  opacity: 0.5;
+  position: relative;
+  top: 1vh;
+  margin-right: 2vh; }
+
+.Icons__ShortName {
+  width: 4vh;
+  opacity: 0.5;
+  position: relative;
+  top: 1vh;
+  margin-right: 2vh; }
+
+/* Hide the browser's default checkbox */
+.Cont__CheckBox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; }
+
+/* On mouse-over, add a grey background color */
+.Cont__CheckBox:hover input ~ .checkmark {
+  background-color: #ccc; }
+
+/* When the checkbox is checked, add a blue background */
+.Cont__CheckBox input:checked ~ .checkmark {
+  background-color: #C8503F; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.Cont__CheckBox input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.Cont__CheckBox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.Billable {
+  margin-left: 7vh; }
+
+.Velocity {
+  margin-left: 6vh; }
+
+.Assignment {
+  margin-left: 10vh; }
 
 .modal {
   display: none;
@@ -259,20 +227,6 @@ a {
   padding: 1vh;
   border-radius: 2vh; }
 
-.Icons__Name {
-  width: 4vh;
-  opacity: 0.5;
-  position: relative;
-  top: 1vh;
-  margin-right: 2vh; }
-
-.Icons__ShortName {
-  width: 4vh;
-  opacity: 0.5;
-  position: relative;
-  top: 1vh;
-  margin-right: 2vh; }
-
 .Sub__Name {
   width: 50vh;
   height: 4vh;
@@ -311,60 +265,109 @@ a {
   margin-left: 5vh;
   margin-top: 5vh; }
 
-.Billable {
-  margin-left: 7vh; }
-
-.Velocity {
-  margin-left: 6vh; }
-
-.Assignment {
-  margin-left: 10vh; }
-
-/* Hide the browser's default checkbox */
-.Cont__CheckBox input {
+.Jobss {
+  font-family: Poppins;
+  background: #fff;
+  width: 178vh;
+  min-height: 70vh;
+  border-radius: 2vh;
   position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0; }
+  top: 18vh;
+  left: 15vh; }
 
-/* Create a custom checkbox */
-.checkmark {
+.Jobss__Title {
+  padding-left: 4vh;
+  font-family: Poppins;
+  font-size: 5vh;
+  font-weight: bold;
+  color: #414D55; }
+
+.TopBar {
+  display: inline-flex;
+  padding-left: 4vh; }
+
+.Boton__add {
+  font-family: Poppins;
+  font-size: 2vh;
+  background: #7A40F2;
+  color: #fff;
+  border-radius: 15vh;
+  border: 1px solid #7A40F2;
+  text-align: center;
+  padding: 1vh;
+  width: 20vh;
+  height: 3vh; }
+
+.SearchBar {
+  font-family: Poppins;
+  margin-left: 83vh;
+  background: #F8F8F8;
+  border-radius: 2vh;
+  padding: 1vh; }
+
+.Sub__SearchBar {
+  width: 50vh;
+  height: 4vh;
+  font-family: Poppins;
+  font-size: 2vh;
+  border: none;
+  background: #F8F8F8; }
+
+.BottomBar {
+  padding-left: 4vh;
+  font-family: Poppins; }
+
+.BottomBar__Cont {
+  margin-top: 2vh;
+  margin-left: 2vh; }
+
+.Folder__One {
+  width: 5vh; }
+
+.Jobs__Route {
+  display: inline-flex;
+  font-size: 2.4vh;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee; }
+  top: 24.9vh;
+  left: 12vh; }
 
-/* On mouse-over, add a grey background color */
-.Cont__CheckBox:hover input ~ .checkmark {
-  background-color: #ccc; }
+.Cont__Jobss {
+  background: #F5F2FB;
+  min-height: 30vh;
+  font-family: Poppins;
+  border-radius: 2vh;
+  padding: 2vh;
+  margin-right: 4vh; }
 
-/* When the checkbox is checked, add a blue background */
-.Cont__CheckBox input:checked ~ .checkmark {
-  background-color: #C8503F; }
+.TblTable {
+  width: 100%;
+  border: 1;
+  cellpadding: 0;
+  cellspacing: 0; }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none; }
+.TblHeader tr th {
+  font-size: 3vh;
+  font-weight: normal;
+  text-align: left; }
 
-/* Show the checkmark when checked */
-.Cont__CheckBox input:checked ~ .checkmark:after {
-  display: block; }
+.TblBody tr td {
+  font-size: 2vh;
+  font-weight: normal; }
 
-/* Style the checkmark/indicator */
-.Cont__CheckBox .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
+.Folder__Two {
+  width: 5vh; }
+
+.txtJobs {
+  display: inline-flex; }
+
+.Botons__Jobs {
+  text-align: center; }
+
+body {
+  margin: 0;
+  background: #eee; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=Jobs.css.map */
