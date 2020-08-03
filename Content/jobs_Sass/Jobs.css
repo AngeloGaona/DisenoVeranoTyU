@@ -1,17 +1,19 @@
 .Fondo_Home {
-  width: 200vh;
+  width: 220vh;
   position: absolute;
   z-index: -1;
-  left: -83vh;
-  bottom: -8vh; }
+  left: -99vh;
+  bottom: -26vh; }
 
 .Logo_Home {
   width: 12vh;
   position: absolute;
-  margin-left: 12vh; }
+  margin-left: 5vh;
+  margin-top: 2vh; }
 
 .Trama {
-  width: 108vh;
+  width: 140vh;
+  height: 125vh;
   z-index: -2;
   position: absolute;
   right: 0; }
@@ -62,7 +64,7 @@
 .Menu__IconUser {
   margin-bottom: 10vh; }
   .Menu__IconUser:hover {
-    background: #fff !important; }
+    background: #fff _ !important; }
 
 .Menu__Img {
   width: 3vh;
@@ -168,7 +170,7 @@
   display: none;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 18vh;
   width: 178vh;
   height: 70vh;
   background-color: black;
@@ -271,9 +273,8 @@
   width: 178vh;
   min-height: 70vh;
   border-radius: 2vh;
-  position: absolute;
-  top: 18vh;
-  left: 15vh; }
+  margin-top: 18vh;
+  margin-left: 10vh; }
 
 .Jobss__Title {
   padding-left: 4vh;
@@ -326,10 +327,7 @@
 
 .Jobs__Route {
   display: inline-flex;
-  font-size: 2.4vh;
-  position: absolute;
-  top: 24.9vh;
-  left: 12vh; }
+  font-size: 2.4vh; }
 
 .Cont__Jobss {
   background: #F5F2FB;
@@ -369,5 +367,25 @@ body {
 
 a {
   text-decoration: none; }
+
+.Container__Menu {
+  width: 4%;
+  height: 100vh;
+  /* Esto lo mantendra en su sitio */
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.Container__Prin {
+  width: 97%;
+  height: 100vh;
+  overflow-y: hidden;
+  /* Esto equilibria lo del aside */
+  position: relative;
+  top: 0;
+  left: 3%; }
+
+.Cont_Prin {
+  display: flex; }
 
 /*# sourceMappingURL=Jobs.css.map */

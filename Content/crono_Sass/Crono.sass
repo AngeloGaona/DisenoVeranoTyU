@@ -1,3 +1,5 @@
+@import _Modal.sass
+
 @import _Menu.sass
 
 @import _Reloj.sass
@@ -5,6 +7,8 @@
 @import _TareasPrioritarias.sass
 
 @import _RelojProyects.sass
+
+@import _Resolutions.sass
 
 @import _Variable.sass
 
@@ -40,6 +44,9 @@ body
 a
     text-decoration: none
 
+button
+    outline: none
+
 /*.ImgTrama
     position: absolute
     min-width: 209vh
@@ -48,3 +55,23 @@ a
     background: url(Img/TramaTwo.png) no-repeat center center fixed 
     background-size: 100% 100% 
     z-index: -2*/
+
+.Container__Menu 
+    width: 4% 
+    height: 100vh  
+    /* Esto lo mantendra en su sitio */
+    position: fixed 
+    top: 0 
+    left: 0
+
+.Container__Prin 
+    width: 97% 
+    height: 125vh
+    overflow-y: hidden
+    /* Esto equilibria lo del aside */
+    position: relative 
+    top: 0 
+    left: 3% 
+
+.Cont_Prin
+    display: flex

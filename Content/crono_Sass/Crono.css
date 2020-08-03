@@ -1,14 +1,76 @@
+.modal {
+  width: 100%;
+  min-height: 125vh;
+  background: #00000080;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  animation: modal 0.5s 0.5s forwards;
+  visibility: hidden;
+  z-index: 1; }
+
+.contenido {
+  margin: auto;
+  margin-bottom: 60vh;
+  width: 65%;
+  height: 40%;
+  background: #FFECC8;
+  border-radius: 10px; }
+
+.Close {
+  font-family: Poppins;
+  font-size: 4vh;
+  font-weight: bold;
+  color: #fff;
+  float: right;
+  padding-right: 3vh;
+  padding-top: 3vh; }
+  .Close:hover {
+    cursor: pointer; }
+
+#cerrar {
+  display: none; }
+
+#cerrar:checked + label, #cerrar:checked ~ .modal {
+  display: none; }
+
+@keyframes modal {
+  100% {
+    visibility: visible;
+    opacity: 1; } }
+.Content__Modaltxt {
+  width: 50%; }
+
+.Modal_Title {
+  font-family: Muli;
+  font-weight: bold;
+  font-size: 6vh;
+  color: #BD5600;
+  margin-left: 3vh; }
+
+.Modal_Txt {
+  font-family: Muli;
+  font-size: 2.8vh;
+  color: #BD5600;
+  margin-left: 3vh; }
+
+.Modal_Img {
+  width: 50%;
+  float: right; }
+
 .Fondo_Home {
-  width: 200vh;
+  width: 220vh;
   position: absolute;
   z-index: -1;
-  left: -83vh;
-  bottom: -8vh; }
+  left: -99vh;
+  bottom: -26vh; }
 
 .Logo_Home {
   width: 12vh;
   position: absolute;
-  margin-left: 12vh; }
+  margin-left: 5vh;
+  margin-top: 2vh; }
 
 .Trama {
   width: 140vh;
@@ -119,10 +181,7 @@
   border-radius: 50%;
   padding: 3vh;
   width: 15vh;
-  height: 15vh;
-  position: absolute;
-  right: 5vh;
-  bottom: 19.5vh; }
+  height: 15vh; }
   .Boton__Pause .txtBoton {
     color: #fff;
     font-family: Poppins;
@@ -140,9 +199,8 @@
   width: 50vh;
   border-radius: 2vh;
   text-align: center;
-  position: absolute;
-  top: 18vh;
-  left: 62vh; }
+  margin-top: 22vh;
+  margin-left: 6vh; }
 
 .Clock {
   display: inline-flex; }
@@ -195,14 +253,17 @@
   height: 7vh;
   border-radius: 15vh;
   border: 1px solid #148B83;
-  position: absolute;
-  top: 15vh;
-  left: 150vh; }
+  margin-bottom: 4vh; }
   .Boton__Create:hover {
     cursor: pointer; }
 
 .txtBoton {
   color: #fff; }
+
+.Jobs__Prioritary {
+  height: 90vh;
+  margin-top: 20vh;
+  margin-left: 36vh; }
 
 .Cont__Jobs__Prioritary {
   background: #fff;
@@ -210,9 +271,6 @@
   height: 68vh;
   border-radius: 5vh;
   padding: 1vh;
-  position: absolute;
-  top: 27vh;
-  left: 150vh;
   overflow-y: scroll; }
 
 .Jobs__Prioritary__Title {
@@ -266,11 +324,11 @@
 .Jobs {
   background: #fff;
   width: 40vh;
+  height: 50vh;
   border-radius: 2vh;
   text-align: center;
-  position: absolute;
-  top: 18vh;
-  left: 15vh; }
+  margin-top: 22vh;
+  margin-left: 6vh; }
 
 .Jobs__Title {
   padding-top: 1vh;
@@ -324,6 +382,9 @@ body {
 a {
   text-decoration: none; }
 
+button {
+  outline: none; }
+
 /*.ImgTrama
  * position: absolute
  * min-width: 209vh
@@ -332,5 +393,24 @@ a {
  * background: url(Img/TramaTwo.png) no-repeat center center fixed 
  * background-size: 100% 100% 
  * z-index: -2 */
+.Container__Menu {
+  width: 4%;
+  height: 100vh;
+  /* Esto lo mantendra en su sitio */
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.Container__Prin {
+  width: 97%;
+  height: 125vh;
+  overflow-y: hidden;
+  /* Esto equilibria lo del aside */
+  position: relative;
+  top: 0;
+  left: 3%; }
+
+.Cont_Prin {
+  display: flex; }
 
 /*# sourceMappingURL=Crono.css.map */

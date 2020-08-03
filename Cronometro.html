@@ -6,137 +6,157 @@
 
 	<!--FUENTES-->
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<img class="Fondo_Home" src="Content/Img/Fondo_Home.png">
-	<img class="Logo_Home" src="Content/Img/Logo_Home.png">
-	<img class="Trama" src="Content/Img/TramaTwo.png" >
+	<!--div class="ImgTrama"></div--> 
+	<input type="checkbox" id="cerrar">
+		<div class="modal">
+			<div class="contenido">
+				<label for="cerrar" id="btn-cerrar" class="Close">X</label>
 
-	<img class="Campana" src="Content/Img/Icons/Group40.png">
-	<img class="Chat" src="Content/Img/Icons/chat.png">
-	<img class="Ajust" src="Content/Img/Icons/Group4.png" >
+				<img class="Modal_Img" src="Content/Img/mujer_pop_up-11.png">
 
-
-	<div class="vertical-menu">
-		<a class="Menu__IconUser" href="#">
-			<img class="Menu__IconUser" src="Content/Img/Icons/User.png">
-	 	</a>
-		<a class="Content__Img Estatic" href="#">
-			<img class="Menu__Img" src="Content/Img/Icons/menu-1.png">
-	  	</a>
-	  	<a class="Content__Img" href="#">
-			<img class="Menu__Img" src="Content/Img/Icons/menu-2.png">
-	  	</a>
-	  	<a class="Content__Img" href="#">
-	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-3.png">
-	  	</a>
-	  	<a class="Content__Img" href="#">
-	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-4.png">
-	  	</a>
-	  	<a class="Content__Img" href="#">
-	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-5.png">
-	  	</a>
-	  	<a class="Content__Img" href="#">
-	  		<img  class="Menu__Img" src="Content/Img/Icons/menu-6.png">
-	  	</a>
-	</div>
-	<div class="Jobs">
-		<p class="Jobs__Title">Proyectos</p>
-		<div class="Cont__Jobs">
-			<a class="Jobs__Subtitle" href="#">
-				Bancolombia
-			</a>
+				<div class="Content__Modaltxt">
+					<p class="Modal_Title">¡Hola, [Usuario]!</p>
+					<p class="Modal_Txt">Bienvenido a tu trabajo. [Empresa] se esmera en cumplir junto contigo las metas propuestas.</p>
+				</div>
+			</div>
 		</div>
-		<div class="Cont__Jobs">
-			<a class="Jobs__Subtitle" href="#">
-				BBVA
-			</a>
+
+
+	<aside class="Container__Menu">
+    	<div class="vertical-menu">
+			<a class="Menu__IconUser" href="#">
+				<img class="Menu__IconUser" src="Content/Img/Icons/User.png">
+		 	</a>
+			<a class="Content__Img Estatic" href="Cronometro.html">
+				<img class="Menu__Img" src="Content/Img/Icons/menu-1.png">
+		  	</a>
+		  	<a class="Content__Img" href="Jobs.html">
+				<img class="Menu__Img" src="Content/Img/Icons/menu-2.png">
+		  	</a>
+		  	<a class="Content__Img" href="#">
+		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-3.png">
+		  	</a>
+		  	<a class="Content__Img" href="#">
+		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-4.png">
+		  	</a>
+		  	<a class="Content__Img" href="#">
+		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-5.png">
+		  	</a>
+		  	<a class="Content__Img" href="#">
+		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-6.png">
+		  	</a>
 		</div>
-		<div class="Cont__Jobs">
-			<a class="Jobs__Subtitle" href="#">
-				Codensa
-			</a>
-		</div>
-		<br>
-		<br>
-	</div>
+  	</aside>
+  	
+  	<div class="Container__Prin">
+		<div class="Cont_Prin">
 
-	<div class="Cont__Clock">
-		<p class="txtTime">Horas</p>
-		<div class="Clock">
-			<p class="Clock__Actually">Actual</p>
-			<p class="Clock__Day">Día</p>
-			<p class="Clock__Week">Semana</p>
-		</div>
-		<br>
-		<div class="Clock__Time">
-			<p class="Time__Actually">12:00:00</p>
-			<p class="Time__Day">12:00:00</p>
-			<p class="Time__Week">12:00:00</p>				
-		</div>
-		<br>
+			<img class="Fondo_Home" src="Content/Img/Fondo_Home.png">
+			<img class="Logo_Home" src="Content/Img/Logo_Home.png">
+			<img class="Trama" src="Content/Img/TramaTwo.png">
+			<img class="Campana" src="Content/Img/Icons/Group40.png">
+			<img class="Chat" src="Content/Img/Icons/chat.png">
+			<img class="Ajust" src="Content/Img/Icons/Group4.png" >
 
-		<!--==========================RELOJ==========================-->
+			<div class="Jobs">
+				<p class="Jobs__Title">Proyectos</p>
+				<div class="Cont__Jobs">
+					<a class="Jobs__Subtitle" href="#">
+						Bancolombia
+					</a>
+				</div>
+				<div class="Cont__Jobs">
+					<a class="Jobs__Subtitle" href="#">
+						BBVA
+					</a>
+				</div>
+				<div class="Cont__Jobs">
+					<a class="Jobs__Subtitle" href="#">
+						Codensa
+					</a>
+				</div>
+			</div>
 
-		<div class="date">
-    		<span id="weekDay" class="weekDay"></span>, 
-    		<span id="day" class="day"></span> de
-		    <span id="month" class="month"></span> del
-		    <span id="year" class="year"></span>
-		</div>
-		<div class="clock">
-		    <span id="hours" class="hours"></span> :
-		    <span id="minutes" class="minutes"></span> :
-		    <span id="seconds" class="seconds"></span>
-		</div>
-		<br>
-		
-		<!--==========================RELOJ==========================-->
-
-		<button class="Boton Boton__Start">
-			<p class="txtBoton" >
-				<b> Iniciar </b> 
-				<br> reloj
-			</p>
-		</button>
-		<button class="Boton Boton__Pause" type="submit">
-			<p class="txtBoton"> Pausar </p>
-		</button>
-
-		<p class="txtClock">Describe tu actividad a realizar</p>
-		<textarea class="Notes"></textarea>
-	</div>
-
-
-	
-	<div class="Jobs__Prioritary">
-		<button class="Boton Boton__Create">
-			<a class="txtBoton" href="#">Crear una nueva tarea</a>
-		</button>
-		
-		<div class="Cont__Jobs__Prioritary">
-			<p class="Jobs__Prioritary__Title">Tareas pioritarias</p>
-			<p class="Jobs__Prioritary__Date">[Fecha]</p>
-
-			<div class="Cont__Jobs__Date">
-				<div class="JobOne">
-					<p class="Jobs__txt">Diseño de proyecto</p>
-					<p class="Jobs__txt">[Hora estipuladas]</p>
+			<div class="Cont__Clock">
+				<p class="txtTime">Horas</p>
+				<div class="Clock">
+					<p class="Clock__Actually">Actual</p>
+					<p class="Clock__Day">Día</p>
+					<p class="Clock__Week">Semana</p>
 				</div>
 				<br>
-				<div class="JobTwo">
-					<p class="Jobs__txt">Diseño de proyecto</p>
-					<p class="Jobs__txt">[Hora estipuladas]</p>
+				<div class="Clock__Time">
+					<p class="Time__Actually">12:00:00</p>
+					<p class="Time__Day">12:00:00</p>
+					<p class="Time__Week">12:00:00</p>				
 				</div>
 				<br>
-				<div class="JobThree">
-					<p class="Jobs__txt">Diseño de proyecto</p>
-					<p class="Jobs__txt">[Hora estipuladas]</p>
+
+				<!--==========================RELOJ==========================-->
+
+				<div class="date">
+		    		<span id="weekDay" class="weekDay"></span>, 
+		    		<span id="day" class="day"></span> de
+				    <span id="month" class="month"></span> del
+				    <span id="year" class="year"></span>
+				</div>
+				<div class="clock">
+				    <span id="hours" class="hours"></span> :
+				    <span id="minutes" class="minutes"></span> :
+				    <span id="seconds" class="seconds"></span>
 				</div>
 				<br>
-				<div class="JobFour">
-					<p class="Jobs__txt">Diseño de proyecto</p>
-					<p class="Jobs__txt">[Hora estipuladas]</p>
+				
+				<!--==========================RELOJ==========================-->
+
+				<button class="Boton Boton__Start">
+					<p class="txtBoton" >
+						<b> Iniciar </b> 
+						<br> reloj
+					</p>
+				</button>
+				<button class="Boton Boton__Pause" type="submit">
+					<p class="txtBoton"> Pausar </p>
+				</button>
+
+				<p class="txtClock">DESCRIBE TU ACTIVIDAD A REALIZAR</p>
+				<textarea class="Notes"></textarea>
+			</div>
+
+			<div class="Jobs__Prioritary">
+				<button class="Boton Boton__Create" href="#">
+					<a class="txtBoton" href="#">Crear una nueva tarea</a>
+				</button>
+				
+				<div class="Cont__Jobs__Prioritary">
+					<p class="Jobs__Prioritary__Title">Tareas pioritarias</p>
+					<p class="Jobs__Prioritary__Date">[Fecha]</p>
+
+					<div class="Cont__Jobs__Date">
+						<div class="JobOne">
+							<p class="Jobs__txt">Diseño de proyecto</p>
+							<p class="Jobs__txt">[Hora estipuladas]</p>
+						</div>
+						<br>
+						<div class="JobTwo">
+							<p class="Jobs__txt">Diseño de proyecto</p>
+							<p class="Jobs__txt">[Hora estipuladas]</p>
+						</div>
+						<br>
+						<div class="JobThree">
+							<p class="Jobs__txt">Diseño de proyecto</p>
+							<p class="Jobs__txt">[Hora estipuladas]</p>
+						</div>
+						<br>
+						<div class="JobFour">
+							<p class="Jobs__txt">Diseño de proyecto</p>
+							<p class="Jobs__txt">[Hora estipuladas]</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

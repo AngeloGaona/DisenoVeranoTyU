@@ -1,0 +1,65 @@
+@import _Variable.sass
+
+.modal  
+    width: 100% 
+    min-height: 125vh 
+    background: #00000080
+    position: absolute 
+    top: 0 
+    left: 0 
+    display: flex 
+    animation: modal .5s .5s forwards 
+    visibility: hidden  
+    z-index: 1
+
+.contenido  
+    margin: auto 
+    margin-bottom: 60vh
+    width: 65% 
+    height: 40% 
+    background: #FFECC8
+    border-radius: 10px 
+
+.Close
+    font-family: Poppins
+    font-size: 4vh
+    font-weight: bold
+    color: $Blanco
+    float: right
+    padding-right: 3vh
+    padding-top: 3vh
+
+    &:hover
+        cursor: pointer
+
+#cerrar
+    display: none
+
+#cerrar:checked + label, #cerrar:checked ~ .modal  
+    display: none 
+
+
+@keyframes modal  
+    100%  
+        visibility: visible 
+        opacity: 1 
+    
+.Content__Modaltxt
+    width: 50%
+
+.Modal_Title
+    font-family: Muli
+    font-weight: bold
+    font-size: 6vh
+    color: #BD5600
+    margin-left: 3vh
+
+.Modal_Txt
+    font-family: Muli
+    font-size: 2.8vh
+    color: #BD5600
+    margin-left: 3vh
+
+.Modal_Img
+    width: 50%
+    float: right
