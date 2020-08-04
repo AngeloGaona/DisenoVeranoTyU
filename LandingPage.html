@@ -10,10 +10,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="Header">
+	<section class="Header">
 		<img class="Logo" src="Content/Img/Verano.png">
 		<img class="FondoOrange" src="Content/Img/Orange.png">
-		<img class="ImgWoman" src="Content/Img/Woman.png">
+		<img class="Hand" src="Content/Img/Hand.png">
 		<img class="ImgPoints" src="Content/Img/Points.png">
 		<img class="ImgSocial" src="Content/Img/social.png">
 		
@@ -22,26 +22,30 @@
 
 			<a class="Header__Menutxt" href="#"> Precio </a>
 
-			<a class="Header__Menutxt" href="#"> Prueba gratis </a>
+			<a class="Header__Menutxt _Border" href="#"> Prueba gratis </a>
 
 			<a class="Header__Menutxt" href="#"> Contacto </a>
 		</div>
 
-		<p class="Header__Title" >TECNOLOGIA</p>
+		<div class="Cont__Headertxt">
+			<p class="Header__Title">TECNOLOGIA</p>
 
-		<P class="Header__Subtitle">Seguimiento de tiempo</P>
+			<P class="Header__Subtitle">Seguimiento de tiempo</P>
 
-		<p class="Header__Txt">Controle fácilmente el tiempo en cualquier dispositivo para optimizar la nómina, enviar facturas precisas y ahorrar miles cada año</p>
-		
-		<div class="Cont__ArrowDown">
-			<img class="ArrowDown" src="Content/Img/Icons/Arrow.png">
+			<p class="Header__Txt">Controle fácilmente el tiempo en cualquier dispositivo para optimizar la nómina, enviar facturas precisas y ahorrar miles cada año</p>
+			
+			<div class="Cont__ArrowDown">
+				<img class="ArrowDown" src="Content/Img/Icons/Arrow.png">
+			</div>
 		</div>
-	</div>
+		
+		<div class="Circule CirculeOne"></div>
 
-	<div class="Circule CirculeOne"></div>
+	</section>
 
-	<div class="Body">
-		<div class="Body__Top">
+
+	<section class="Body">
+		<div class="Body__Header">
 
 			<img class="Body__ImgIndice" src="Content/Img/Indice.png">
 
@@ -54,7 +58,6 @@
 
 				<a class="Body__Top--Boton" href="registro.html">Prueba TyU</a>
 			</div>
-			
 		</div>
 		
 		<div class="Cont__Circles">
@@ -62,9 +65,8 @@
 			<div class="Circule MinCirculeTwo"></div>
 			<div class="Circule CirculeTwo"></div>
 		</div>
-		
 
-		<div class="Body__TopTwo">
+		<div class="Body__Top">
 			<p class="Subtitle TopTwo"> SERVICIOS </p>
 			<p class="Title TopTwo"> Todo lo que necesites </p>
 
@@ -104,12 +106,404 @@
 				</div>				
 			</div>
 
+			<div class="Cont__CirclesTwo">
+				<div class="Circule CirculeRight"></div>
+			</div>
+			
+			<div class="Cont__Top__Body">
+				<div class="Top__Body">
+					<p class="Subtitle">APOYO</p>
+					<p class="Title">24/7 Soporte</p>
 
+					<a class="Desplegable" href="#" onclick="cambiar('FirstText'); return false;">
+						Listo para chatear
+					</a>
 
+					<p id="FirstText" class="Txt__Des">
+						Es la llamada de servicio al cliente más amigable que jamás haya tenido, ¡garantizada!
+					</p>
+					
+					<a class="Desplegable" href="#" onclick="cambiar('SecondText'); return false;">
+						Consulta de servicios
+					</a>
+
+					<p id="SecondText" class="Txt__Des" style="display: none">[None info]</p>
+
+					<a class="Desplegable" href="#" onclick="cambiar('ThirdText'); return false;">
+						Centro de ayuda
+					</a>
+
+					<p id="ThirdText" class="Txt__Des" style="display: none">[None Info]</p>
+				</div>
+
+				<img class="ClockLanding" src="Content/Img/ClockLanding.png">	
+			</div>
+		</div>
+
+		<div class="Body__Central">
+			<p class="Subtitle">ALERTAS Y APROBACIONES</p>
+			<p class="Title">TyU</p>
+
+			<div class="Menu__Tags">
+				<a class="Body__Menutxt __Left" onclick="Tabs('all')">
+					Todo
+				</a>
+				<a class="Body__Menutxt" onclick="Tabs('Time')">
+					Horas
+				</a>
+				<a class="Body__Menutxt" onclick="Tabs('Sheets')">
+					Hojas
+				</a>
+				<a class="Body__Menutxt" onclick="Tabs('Alerts')">
+					Alertas
+				</a>
+				<a class="Body__Menutxt __Right" onclick="Tabs('Facial')">
+					Facial
+				</a>
+			</div>
+
+			<div id="all" class="subTabs" >
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Horas extras</p>
+			  		<p class="Tags__Txt">
+			  			Reciba alertas antes de que comience el costoso tiempo extra
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Programación facilitada</p>
+			  		<p class="Tags__Txt">
+			  			Cree y administre los horarios de los empleados
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags3.png">
+			  		
+			  		<p class="Tags__Title">Alertas personalizadas</p>
+			  		<p class="Tags__Txt">
+			  			Notifique a los empleados con alertas y notificaciones push.
+			  		</p>
+			  	</div>
+			</div>
+
+			<div id="Time" class="subTabs" style="display:none">
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags3.png">
+			  		
+			  		<p class="Tags__Title">Horas extras</p>
+			  		<p class="Tags__Txt">
+			  			Reciba alertas antes de que comience el costoso tiempo extra
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Programación facilitada</p>
+			  		<p class="Tags__Txt">
+			  			Cree y administre los horarios de los empleados
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Alertas personalizadas</p>
+			  		<p class="Tags__Txt">
+			  			Notifique a los empleados con alertas y notificaciones push.
+			  		</p>
+			  	</div>
+			</div>
+
+			<div id="Sheets" class="subTabs" style="display:none">
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Horas extras</p>
+			  		<p class="Tags__Txt">
+			  			Reciba alertas antes de que comience el costoso tiempo extra
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags3.png">
+			  		
+			  		<p class="Tags__Title">Programación facilitada</p>
+			  		<p class="Tags__Txt">
+			  			Cree y administre los horarios de los empleados
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Alertas personalizadas</p>
+			  		<p class="Tags__Txt">
+			  			Notifique a los empleados con alertas y notificaciones push.
+			  		</p>
+			  	</div>
+			</div>
+
+			<div id="Alerts" class="subTabs" style="display:none">
+				<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Horas extras</p>
+			  		<p class="Tags__Txt">
+			  			Reciba alertas antes de que comience el costoso tiempo extra
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Programación facilitada</p>
+			  		<p class="Tags__Txt">
+			  			Cree y administre los horarios de los empleados
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags3.png">
+			  		
+			  		<p class="Tags__Title">Alertas personalizadas</p>
+			  		<p class="Tags__Txt">
+			  			Notifique a los empleados con alertas y notificaciones push.
+			  		</p>
+			  	</div>
+			</div>
+
+			<div id="Facial" class="subTabs" style="display:none">
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags3.png">
+			  		
+			  		<p class="Tags__Title">Horas extras</p>
+			  		<p class="Tags__Txt">
+			  			Reciba alertas antes de que comience el costoso tiempo extra
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags2.png">
+			  		
+			  		<p class="Tags__Title">Programación facilitada</p>
+			  		<p class="Tags__Txt">
+			  			Cree y administre los horarios de los empleados
+			  		</p>
+			  	</div>
+
+			  	<div class="Cont__Tabs">
+			  		<img class="ImgTags" src="Content/Img/tags3.png">
+			  		
+			  		<p class="Tags__Title">Alertas personalizadas</p>
+			  		<p class="Tags__Txt">
+			  			Notifique a los empleados con alertas y notificaciones push.
+			  		</p>
+			  	</div>
+			</div>
+			
+			<a class="Btn__More" href="#">Conocer más</a>
+	
+			<div class="Circule Circule__Body"></div>
+
+			<div class="Body__Central__Foot">
+				<img class="ImgPlay" src="Content/Img/play.png">
+
+				<div class="Cont__Foot">
+					<p class="Body__SubTitle">VIDEO</p>
+					<p class="Body__Title">
+						Programación de turnos rápido y fácil
+					</p>
+					<p class="Body__Txt" >
+						El rastreador de hojas de tiempo de TSheets puede <br> mejorar la nómina, la rentabilidad y la productividad en su negocio.
+					</p>
+					
+					<div class="BodyFoot">
+						<div class="Cont__BodyFoot">
+							<p class="Body__TitleTwo">97%</p>
+							<p class="Body__TxtTwo">
+								De fidelidad con respecto a las horas.
+							</p>
+						</div>
+						<div class="Cont__BodyFoot">
+							<p class="Body__TitleTwo">42+</p>
+							<p class="Body__TxtTwo">
+								Empresas confían en nosotros.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="Body__Foot">
+			<p class="Subtitle">MONITOREO</p>
+			<p class="Title__BodyFoot">ASISTENCIA EN EL SITIO</p>
+				
+			<div class="Body__FootTop">
+				<div class="Cont__FootTop">
+					<div class="Cont__Number">
+						<p class="Numberr">01</p>
+					</div> 
+					<p class="Title__FootTop">Reloj rápido</p>
+					<p class="Txt__FootTop">
+						Los empleados que trabajan en una ubicación pueden rastrear el tiempo desde un dispositivo, entrando y saliendo en segundos
+					</p>
+				</div>
+				<div  class="Cont__FootTop">
+					<div class="Cont__Number">
+						<p class="Numberr">02</p>
+					</div> 
+					<p class="Title__FootTop">Integraciones fáciles</p>
+					<p class="Txt__FootTop">
+						Los empleados pueden revisar y enviar partes de horas desde el quiosco. Los datos de tiempo se sincronizan con el software de nómina de su elección.
+					</p>
+				</div>
+				<div  class="Cont__FootTop">
+					<div class="Cont__Number">
+						<p class="Numberr">03</p>
+					</div> 
+					<p class="Title__FootTop">Reconocimiento facial</p>
+					<p class="Txt__FootTop">
+						Los empleados pueden rastrear el tiempo con un PIN de cuatro dígitos. Habilite el reconocimiento facial para frenar el robo de tiempo y los golpes con amigos.
+					</p>
+				</div>
+			</div>
+
+			<div class="Cont__CirclesBody">
+				<div class="CirculeBody MinCircule"></div>
+				<div class="CirculeBody MinCirculeTwo"></div>
+				<div class="CirculeBody CirculeTwo"></div>
+			</div>
+
+			<div class="BodyFoot__Central">
+				<div class="Cont__FootCentral">
+					<div class="Cont__IconCentral Red">
+						
+					</div>
+					<p class="Numbers__Central">73</p> 
+					<p class="Title__FootTop">Clientes</p>
+				</div>
+
+				<div class="Cont__FootCentral">
+					<div class="Cont__IconCentral Purple">
+						<img src="Content/Img/Cubo.png">
+					</div>
+					<p class="Numbers__Central">42</p> 
+					<p class="Title__FootTop">Integraciones posibles</p>
+				</div>
+
+				<div class="Cont__FootCentral">
+					<div class="Cont__IconCentral Brown">
+						<img src="Content/Img/Jet.png">
+					</div>
+					<p class="Numbers__Central">150.000</p> 
+					<p class="Title__FootTop">Líneas de código</p>
+				</div>
+
+				<div class="Cont__FootCentral">
+					<div class="Cont__IconCentral Orange">
+						<img src="Content/Img/Tuerca.png">
+					</div>
+					<p class="Numbers__Central">1+</p> 
+					<p class="Title__FootTop">Año</p>
+				</div>
+			</div>
+			<div class="Cont__CirclesThree">
+				<div class="Circule CirculeRight"></div>
+			</div>
+
+			<div class="BodyFoot__Foot">
+				<div class="Cont__FootFoot">
+					<p class="Foot__SubTitle">TESTIMONIOS</p>
+					<p class="Foot__Title">
+						Lo que nuestros clientes dicen.
+					</p>
+
+					<img class="Photos" src="Content/Img/Photos.png">
+					<a class="BtnContac" href="#">Contáctenos</a>
+				</div>
+
+				<img src="Content/Img/FootTemp.png">
+			</div>
+		</div>
+	</section>
+
+	<section class="Foot">
+		<div class="Menu__Foot">
+			<img class="ImgMenuFoot" src="Content/Img/Menu__Foot.png">
 		</div>
 		
-	</div>
+		<div class="Foot__Top">
+			<div>
+				<p class="Foot__TopTitle">¡Compra ahora!</p>
+				<p class="Foot__TopTxt">Después de haber formado esta determinación, y de haber pasado algunos meses.</p>
+			</div>
+			
+			<div class="Cont__BtnFree">
+				<a class="BtnFree" href="#">¡PRUEBA GRATIS!</a>	
+			</div>
+		</div>
+		<div class="Foot__Central">
+			<div class="Cont__Central">
+				<img class="ImgVerano" src="Content/Img/Verano.png">
+				<img class="SocialTwo" src="Content/Img/social2.png">
+			</div>
 
+			<div class="Cont__Central Cont__Second">
+				<p class="Title__Central">MENU</p>
+				<p>Acerca</p>
+				<p>Precio</p>
+				<p>Configuracíon</p>
+			</div>
+
+			<div class="Cont__Central Cont__Second">
+				<p></p>
+				<p>Blog</p>
+				<p>Testimonials</p>
+				<p>Contact</p>
+			</div>
+
+			<div class="Cont__Central Cont__Third">
+				<p class="Title__Central">SUSCRIBETE</p>
+				<input class="BoxText" type="text" placeholder="Tu correo electrónico">
+				<a class="BtnSubs" href="#">Suscríbete</a>
+			</div>
+		</div>
+		<div class="Foot__Final">
+			<p>Verano - 2020</p>
+			<div class="Final">
+				<p>Término de condiciones</p>
+				<p>Políticas de privacidad</p>
+			</div>
+		</div>
+	</section>
 
 </body>
 </html>
+
+<script type="text/javascript">
+	function cambiar(view)
+	{
+		cont = document.getElementById(view).style.display;
+		if (cont == 'none')
+			cont = 'block';
+		else
+			cont = 'none';
+
+		document.getElementById(view).style.display = cont;
+	}
+
+	function Tabs(tabsName) {
+	  var i;
+	  var x = document.getElementsByClassName("subTabs");
+	  for (i = 0; i < x.length; i++) {
+	    x[i].style.display = "none";  
+	  }
+	  document.getElementById(tabsName).style.display = "flex";  
+	}
+</script>

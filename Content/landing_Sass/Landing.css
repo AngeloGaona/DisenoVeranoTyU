@@ -1,0 +1,665 @@
+body {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+.Header {
+  background: linear-gradient(180deg, white 40%, #edecf5 85%);
+  height: 120vh;
+  position: relative;
+  z-index: 0; }
+
+.Logo {
+  width: 10%;
+  float: left;
+  margin-top: 5vh;
+  margin-left: 24vh; }
+
+.FondoOrange {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 56%; }
+
+.Hand {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 42%; }
+
+.ImgPoints {
+  position: absolute;
+  top: 26vh;
+  left: 10vh;
+  z-index: -1; }
+
+.ImgSocial {
+  position: absolute;
+  bottom: 0;
+  right: 12vh; }
+
+.Header__Menu {
+  font-family: Poppins;
+  font-size: 2vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20vh; }
+
+.Header__Menutxt {
+  margin: 5vh;
+  color: #fff;
+  padding: 1vh; }
+  .Header__Menutxt:hover {
+    text-decoration: underline; }
+
+._Border {
+  border: 1px solid #fff;
+  border-radius: 15vh;
+  padding-left: 3vh;
+  padding-right: 3vh; }
+
+.Cont__Headertxt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 18vh;
+  margin-top: 8vh; }
+
+.Header__Title {
+  font-family: Poppins;
+  font-size: 3vh;
+  font-weight: 500;
+  color: #ffd093;
+  width: 62vh; }
+
+.Header__Subtitle {
+  font-family: Poppins;
+  font-size: 8vh;
+  font-weight: 500;
+  color: #fff;
+  width: 62vh;
+  margin: 0; }
+
+.Header__Txt {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #fff;
+  width: 62vh; }
+
+.Cont__ArrowDown {
+  width: 5vh;
+  height: 5vh;
+  padding: 3vh;
+  background: #cf573e;
+  border-radius: 50vh;
+  margin-top: 8vh;
+  margin-right: 4vh; }
+  .Cont__ArrowDown:hover {
+    background: linear-gradient(#cf573e, #e24221); }
+
+.ArrowDown {
+  width: 100%; }
+
+.Circule {
+  background: linear-gradient(#C84835, #F5AA6B); }
+
+.CirculeOne {
+  width: 40vh;
+  height: 20vh;
+  border-top-right-radius: 50vh;
+  border-top-left-radius: 50vh;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 0; }
+
+.Body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh; }
+
+.Body__ImgIndice {
+  width: 35%;
+  float: left;
+  margin-left: 24vh; }
+
+.Cont__BodyTop {
+  display: flex;
+  flex-direction: column;
+  width: 61vh;
+  float: left;
+  margin-left: 10vh; }
+
+.Subtitle {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #DEA04F;
+  font-weight: 500; }
+
+.Title {
+  font-family: Poppins;
+  font-size: 8vh;
+  color: #333333;
+  margin: 0;
+  line-height: 10vh; }
+
+.Txt {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #333333; }
+
+.Body__Top--Boton {
+  font-family: Poppins;
+  font-size: 2vh;
+  background: #3E369A;
+  color: #fff;
+  width: 20vh;
+  height: 3vh;
+  padding: 1vh;
+  border-radius: 5vh;
+  text-align: center;
+  margin-top: 5vh; }
+  .Body__Top--Boton:hover {
+    background: linear-gradient(#3E369A, #6200ff); }
+
+.CirculeTwo {
+  width: 20vh;
+  height: 40vh;
+  border-top-left-radius: 20vh;
+  border-bottom-left-radius: 20vh; }
+
+.MinCircule {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50vh;
+  align-self: center; }
+
+.MinCirculeTwo {
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50vh;
+  align-self: flex-end; }
+
+.Cont__Circles {
+  display: flex;
+  justify-content: flex-end; }
+
+.TopTwo {
+  text-align: center; }
+
+.Top__Subtitle {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #333333;
+  margin: 0;
+  margin-left: 5vh;
+  margin-right: 20vh; }
+
+.Top__Txt {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #33333380;
+  width: 40vh;
+  margin-left: 5vh;
+  margin-right: 20vh; }
+
+.Cont__Top {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh; }
+
+.Cont__Icon {
+  width: 10vh;
+  height: 10vh;
+  padding: 3vh;
+  border-radius: 50vh;
+  display: flex; }
+
+.--One {
+  background: #c84835; }
+
+.--Two {
+  background: #856286; }
+
+.--Three {
+  background: #c08878; }
+
+.--Four {
+  background: #eaa36e; }
+
+.IconBody {
+  display: flex;
+  margin: auto; }
+
+.Cont__CirclesTwo {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5vh;
+  position: absolute; }
+
+.CirculeRight {
+  width: 20vh;
+  height: 40vh;
+  border-top-right-radius: 20vh;
+  border-bottom-right-radius: 20vh; }
+
+.Cont__Top__Body {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30vh; }
+
+.Top__Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55vh; }
+
+.Desplegable {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #000;
+  margin-top: 2vh; }
+
+.Txt__Des {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #33333380;
+  width: 55vh; }
+
+.ClockLanding {
+  width: 35%; }
+
+.Body__Central {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.Menu__Tags {
+  display: flex;
+  justify-content: space-around;
+  width: 52vh;
+  margin: 5vh;
+  border-radius: 5vh;
+  -webkit-box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 20px 2px rgba(0, 0, 0, 0.2); }
+
+.Body__Menutxt {
+  font-family: Poppins;
+  font-size: 2vh;
+  padding: 2vh;
+  width: 10vh;
+  color: #000; }
+  .Body__Menutxt:hover {
+    background: #ececec; }
+
+.__Left {
+  border-top-left-radius: 5vh;
+  border-bottom-left-radius: 5vh; }
+
+.__Right {
+  border-top-right-radius: 5vh;
+  border-bottom-right-radius: 5vh; }
+
+.subTabs {
+  display: flex;
+  width: 75%;
+  justify-content: space-around; }
+
+.Cont__Tabs {
+  width: 46vh;
+  border-radius: 2.5vh;
+  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2); }
+
+.ImgTags {
+  width: 100%; }
+
+.Tags__Title {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #000;
+  margin-top: 2vh;
+  padding-left: 4vh; }
+
+.Tags__Txt {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #33333380;
+  width: 40vh;
+  padding-left: 4vh;
+  padding-right: 4vh; }
+
+.Btn__More {
+  font-family: Poppins;
+  font-size: 2vh;
+  font-weight: bold;
+  color: #3E369A;
+  display: flex;
+  margin-top: 8vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  border: 2px solid #3E369A;
+  border-radius: 4vh; }
+  .Btn__More:hover {
+    background: #3E369A;
+    color: #fff; }
+
+.Circule__Body {
+  width: 30vh;
+  height: 15vh;
+  border-top-right-radius: 50vh;
+  border-top-left-radius: 50vh;
+  margin-top: 4vh;
+  position: relative;
+  right: 28vh;
+  top: 6vh;
+  z-index: -1; }
+
+.Body__Central__Foot {
+  background: url(Img/Fondo__Body.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  padding-top: 20vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: -1; }
+
+.ImgPlay {
+  width: 20%; }
+
+.PointsTwo {
+  width: 20%;
+  z-index: -1; }
+
+.Cont__Foot {
+  margin-bottom: 20vh; }
+
+.Body__SubTitle {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #DEA04F; }
+
+.Body__Title {
+  font-family: Poppins;
+  font-size: 5vh;
+  color: #fff;
+  width: 42vh; }
+
+.Body__Txt {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #fff; }
+
+.BodyFoot {
+  display: flex; }
+
+.Cont__BodyFoot {
+  display: flex;
+  flex-direction: column; }
+
+.Body__TitleTwo {
+  font-family: Poppins;
+  font-size: 5vh;
+  color: #fff;
+  margin: 0;
+  width: 42vh; }
+
+.Body__TxtTwo {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #FFFFFF80;
+  width: 26vh; }
+
+.Body__Foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh; }
+
+.Title__BodyFoot {
+  font-family: Poppins;
+  font-size: 6vh;
+  margin: 0; }
+
+.Body__FootTop {
+  display: flex;
+  justify-content: space-around;
+  width: 150vh;
+  margin-top: 8vh; }
+
+.Cont__FootTop {
+  text-align: center; }
+
+.Cont__Number {
+  background: #fff;
+  border-radius: 10vh;
+  width: 15vh;
+  height: 15vh;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 3px 20px 2px rgba(0, 0, 0, 0.2); }
+
+.Numberr {
+  font-family: Poppins;
+  font-size: 5vh;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
+
+.Title__FootTop {
+  font-family: Poppins;
+  font-size: 3vh; }
+
+.Txt__FootTop {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #33333380;
+  width: 38vh; }
+
+.Cont__CirclesBody {
+  display: flex;
+  align-self: flex-end; }
+
+.CirculeBody {
+  background: linear-gradient(#3E3498, #F5AA6B); }
+
+.BodyFoot__Central {
+  display: flex;
+  justify-content: space-around;
+  width: 150vh; }
+
+.Cont__FootCentral {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.Cont__IconCentral {
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50vh;
+  display: flex;
+  justify-content: center;
+  padding: 3vh; }
+
+.Red {
+  background: #C84835; }
+
+.Purple {
+  background: #856286; }
+
+.Brown {
+  background: #C08878; }
+
+.Orange {
+  background: #EAA36E; }
+
+.Numbers__Central {
+  font-family: Poppins;
+  font-size: 5vh;
+  text-align: center;
+  margin-bottom: 0; }
+
+.Title__FootTop {
+  font-family: Poppins;
+  font-size: 3vh;
+  text-align: center; }
+
+.Cont__CirclesThree {
+  display: flex;
+  align-self: flex-start; }
+
+.BodyFoot__Foot {
+  display: flex;
+  justify-content: space-around;
+  width: 150vh; }
+
+.Foot__SubTitle {
+  font-family: Poppins;
+  font-size: 3vh;
+  color: #DEA04F; }
+
+.Foot__Title {
+  font-family: Poppins;
+  font-size: 6vh;
+  width: 50vh; }
+
+.BtnContac {
+  font-family: Poppins;
+  font-size: 2vh;
+  background: #3E369A;
+  color: #fff;
+  display: flex;
+  margin-top: 8vh;
+  border-radius: 5vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  width: 13vh; }
+  .BtnContac:hover {
+    background: linear-gradient(#3E369A, #6200ff); }
+
+.BigCircule {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 50vh;
+  background: linear-gradient(#3E3498, #F5AA6B); }
+
+.Foot {
+  background: #EFF1FD; }
+
+.Menu__Foot {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  background: #fff; }
+
+.Foot__Top {
+  background: #856286;
+  display: flex;
+  justify-content: space-around; }
+
+.Foot__TopTitle {
+  font-family: Poppins;
+  font-size: 4vh;
+  color: #fff;
+  padding-top: 10vh;
+  padding-left: 20vh; }
+
+.Foot__TopTxt {
+  font-family: Poppins;
+  font-size: 2vh;
+  color: #FFFFFF80;
+  padding-left: 20vh;
+  padding-bottom: 10vh; }
+
+.Cont__BtnFree {
+  display: flex; }
+
+.BtnFree {
+  font-family: Poppins;
+  font-size: 2vh;
+  background: #F8C481;
+  color: #fff;
+  border-radius: 5vh;
+  padding: 2vh;
+  display: flex;
+  align-self: center; }
+  .BtnFree:hover {
+    background: #ffaf49; }
+
+.Foot__Central {
+  display: flex;
+  background: #EFF1FD;
+  justify-content: space-around;
+  width: 100%; }
+
+.Cont__Central {
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  font-size: 2vh;
+  margin-top: 5vh; }
+
+.ImgVerano {
+  margin-bottom: 5vh; }
+
+.Title__Central {
+  color: #DEA04F;
+  font-weight: bold; }
+
+.Cont__Second {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10vh; }
+
+.Cont__Third {
+  padding-top: 10vh; }
+
+.BoxText {
+  font-family: Poppins;
+  font-size: 2vh;
+  width: 25vh;
+  height: 5vh;
+  border: 1px solid #DADADA;
+  border-radius: 5vh;
+  padding-left: 2vh; }
+
+.BtnSubs {
+  background: #C84835;
+  color: #fff;
+  width: 25vh;
+  height: 5vh;
+  border: 1px solid;
+  border-radius: 5vh;
+  padding-left: 2vh;
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.Foot__Final {
+  padding-top: 20vh;
+  font-family: Poppins;
+  font-size: 2vh;
+  background: #EFF1FD;
+  display: flex;
+  justify-content: space-around; }
+
+.Final {
+  display: flex;
+  justify-content: space-around;
+  width: 60vh; }
+
+/*# sourceMappingURL=Landing.css.map */
