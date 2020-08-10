@@ -115,15 +115,18 @@
 
 .ImgCubo {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
 
 .ImgJet {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
 
 .ImgTuerca {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
 
 .ImgVerano {
   margin-bottom: 5vh; }
