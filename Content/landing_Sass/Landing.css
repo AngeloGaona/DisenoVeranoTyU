@@ -81,6 +81,17 @@
   z-index: -1;
   width: 56%; }
 
+.ImgPoints {
+  position: Absolute;
+  top: 26vh;
+  left: 10vh;
+  z-index: -1; }
+
+.ImgSocial {
+  position: Absolute;
+  bottom: 0;
+  right: 12vh; }
+
 .ImgSoc {
   width: 35%;
   margin: auto; }
@@ -101,6 +112,18 @@
 .PointsTwo {
   width: 20%;
   z-index: -1; }
+
+.ImgCubo {
+  display: flex;
+  align-items: center; }
+
+.ImgJet {
+  display: flex;
+  align-items: center; }
+
+.ImgTuerca {
+  display: flex;
+  align-items: center; }
 
 .ImgVerano {
   margin-bottom: 5vh; }
@@ -268,17 +291,6 @@
   left: 0;
   bottom: 0;
   width: 42%; }
-
-.ImgPoints {
-  position: Absolute;
-  top: 26vh;
-  left: 10vh;
-  z-index: -1; }
-
-.ImgSocial {
-  position: Absolute;
-  bottom: 0;
-  right: 12vh; }
 
 .Header__Menu {
   font-family: Poppins;
@@ -757,7 +769,8 @@
   height: 5vh;
   border: 1px solid #DADADA;
   border-radius: 5vh;
-  padding-left: 2vh; }
+  padding-left: 2vh;
+  outline: none; }
 
 .BtnSubs {
   background: #C84835;
