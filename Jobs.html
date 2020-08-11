@@ -28,42 +28,42 @@
 				<p class="Menu__Txt">Reloj</p>
 			</a>
 
-			<a class="Cont__Menu"  href="#">
+			<a class="Cont__Menu MenuDisabled"  href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-3.png">
 				<p class="Menu__Txt">Calendario</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-4.png">
 				<p class="Menu__Txt">Quien trabaja</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-5.png">
 				<p class="Menu__Txt">Entradas</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()"> 
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-6.png">
 				<p class="Menu__Txt">Tiempo libre</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-7.png">
 				<p class="Menu__Txt">Aprobaciones</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-8.png">
 				<p class="Menu__Txt">Factura</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-9.png">
 				<p class="Menu__Txt">Informes</p>
 			</a>
 
-			<a class="Cont__Menu" href="#">
+			<a class="Cont__Menu MenuDisabled" href="#" onclick="Des()">
 				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-10.png">
 				<p class="Menu__Txt">Mi equipo</p>
 			</a>
@@ -251,7 +251,7 @@ window.onclick = function(event) {
 	function openNav() {
 		var menu = document.getElementById("Container__Menu");
 	  	var container = document.getElementById("Container__Prin");
-	  	var contMenu = document. getElementsByClassName("Cont__Menu");
+	  	var contMenu = document.getElementsByClassName("Cont__Menu");
 	  	var texto = document.getElementsByClassName("Menu__Txt");
 	  	var salida = document.getElementById("Txt__Exit");
 	  	var botonOpen = document.getElementById("openbtn");
@@ -300,4 +300,9 @@ window.onclick = function(event) {
 	  		texto[i].style.display = "none";
 	  	}
 	}
+
+	function Des() {
+		alert("No disponible")
+	}
+
 </script>
