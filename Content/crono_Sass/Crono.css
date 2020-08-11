@@ -357,6 +357,9 @@
   margin-right: 3vh;
   padding: 1vh; }
 
+.Cont__New {
+  z-index: 1; }
+
 .Jobs {
   background: transparent;
   border: #D4D4D4 2vh dashed;
