@@ -350,13 +350,17 @@
   background: #cf573e;
   border-radius: 50vh;
   margin-top: 8vh;
-  margin-right: 4vh; }
+  margin-right: 4vh;
+  display: flex;
+  justify-content: center; }
   .Cont__ArrowDown:hover {
     background: linear-gradient(#cf573e, #e24221);
     cursor: pointer; }
 
 .ArrowDown {
-  width: 100%; }
+  font-family: Poppins;
+  Color: #ffffff;
+  font-size: 5vh; }
 
 .Cont__Soc {
   display: flex;

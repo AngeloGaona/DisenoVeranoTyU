@@ -1,13 +1,14 @@
 
 .Boton__Create
     font-family: $Tipo_Fuente
-    font-size: 2vh
+    font-size: 2.4vh
     background: #148B83
     width: 50vh
     height: 7vh
     border-radius: 15vh
     border: 1px solid #148B83
     margin-bottom: 4vh
+    display: none
 
     &:hover
         cursor: pointer
@@ -16,24 +17,34 @@
     color: $Blanco
 
 .Jobs__Prioritary
-    height: 90vh
-    margin-top: 20vh
-    margin-left: 36vh
-
+    height: auto
+    z-index: 1
+    
 .Cont__Jobs__Prioritary
     background: $Blanco
     width: 50vh
-    height: 68vh
-    border-radius: 5vh
+    height: 87vh
+    border-radius: 2vh
     padding: 1vh
     overflow-y: scroll
+
+.Cont__Jobs__Prioritary::-webkit-scrollbar 
+    width: 1vh
+
+.Cont__Jobs__Prioritary::-webkit-scrollbar-track 
+    border-radius: 10vh
+    background-color: #F8F8F8
+
+.Cont__Jobs__Prioritary::-webkit-scrollbar-thumb 
+    background-image: linear-gradient(45deg, #6F52ED, #6F52ED)
+    border-radius: 10vh
 
 .Jobs__Prioritary__Title
     padding-top: 1vh
     font-family: $Tipo_Fuente
     font-size: 4vh
+    text-align: center
     font-weight: bold
-    margin-left: 2vh
 
 .Jobs__Prioritary__Date
     padding-top: 1vh
@@ -44,34 +55,13 @@
 .Jobs__txt
     font-family: $Tipo_Fuente
     font-size: 2.2vh
-    font-weight: bold
     margin-left: 2vh
     opacity: 1
 
-.JobOne
-    background: rgba(127, 86, 180, 0.48)
+.Job
+    background: #F5F2FB
     border-radius: 1vh
-    margin-left: 3vh
-    margin-right: 3vh
-    padding: 1vh
-
-.JobTwo
-    background: rgba(255, 110, 110, 0.48)
-    border-radius: 1vh
-    margin-left: 3vh
-    margin-right: 3vh
-    padding: 1vh
-
-.JobThree
-    background: rgba(43, 200, 216, 0.48)
-    border-radius: 1vh
-    margin-left: 3vh
-    margin-right: 3vh
-    padding: 1vh
-
-.JobFour
-    background: rgba(127, 86, 180, 0.48)
-    border-radius: 1vh
+    margin-top: 2vh
     margin-left: 3vh
     margin-right: 3vh
     padding: 1vh

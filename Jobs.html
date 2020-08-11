@@ -13,50 +13,85 @@
 </head>
 <body>
 
-	<aside class="Container__Menu">
-    	<div class="vertical-menu">
-			<a class="Menu__IconUser" href="#">
-				<img class="Menu__IconUser" src="Content/Img/Icons/User.png">
-		 	</a>
-			<a class="Content__Img" href="Cronometro.html">
-				<img class="Menu__Img" src="Content/Img/Icons/menu-1.png">
-		  	</a>
-		  	<a class="Content__Img Estatic" href="Jobs.html">
-				<img class="Menu__Img" src="Content/Img/Icons/menu-2.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-3.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-4.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-5.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-6.png">
-		  	</a>
+	<aside id="Container__Menu" class="Container__Menu">
+
+		<img class="Logo_Home" src="Content/Img/Logo_Home.png">
+    	
+    	<div class="Menu__">
+    		<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-1.png">
+				<p class="Menu__Txt">Inicio</p>	
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-2.png">
+				<p class="Menu__Txt">Reloj</p>
+			</a>
+
+			<a class="Cont__Menu"  href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-3.png">
+				<p class="Menu__Txt">Calendario</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-4.png">
+				<p class="Menu__Txt">Quien trabaja</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-5.png">
+				<p class="Menu__Txt">Entradas</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-6.png">
+				<p class="Menu__Txt">Tiempo libre</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-7.png">
+				<p class="Menu__Txt">Aprobaciones</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-8.png">
+				<p class="Menu__Txt">Factura</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-9.png">
+				<p class="Menu__Txt">Informes</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-10.png">
+				<p class="Menu__Txt">Mi equipo</p>
+			</a>
+    	</div>
+
+    	<a class="Cont__Exit" href="#">
+    		<img class="ImgExit" src="Content/Img/Icons/Exit.png">
+    		<p id="Txt__Exit" class="Txt__Exit">SALIR</p>
+    	</a>
+		
+		<div class="Cont__btnMenu">
+			<button id="openbtn" class="openbtn" onclick="openNav()">»</button>
+			<button id="closebtn" class="closebtn" onclick="closeNav()">«</button>
 		</div>
   	</aside>
 
-	<div class="Container__Prin">
+	<div id="Container__Prin" class="Container__Prin">
 		<div class="Cont_Prin">
-
-			<img class="Fondo_Home" src="Content/Img/Fondo_Home.png">
-			<img class="Logo_Home" src="Content/Img/Logo_Home.png">
-			<img class="Trama" src="Content/Img/TramaTwo.png" >
-
-			<img class="Campana" src="Content/Img/Icons/Group40.png">
-			<img class="Chat" src="Content/Img/Icons/chat.png">
-			<img class="Ajust" src="Content/Img/Icons/Group4.png" >
-
+			<img class="ImgTramaClock" src="Content/Img/TramaTwo.png">
 			<div class="Jobss">
 				<p class="Jobss__Title">Administración de lugares</p>
 				
 				<div class="TopBar">
-					<a class="Boton Boton__add" href="#">
-						+ ADICIONAR
-					</a>
+					<div class="Cont__Botonadd">
+						<a class="Boton Boton__add" href="#">
+							+ ADICIONAR
+						</a>
+					</div>
 					
 					<div class="SearchBar">
 						<img class="Icons__Ubication" src="Content/Img/Icons/alfiler.png">
@@ -97,7 +132,7 @@
 											<img class="Icon Icons__Plus" src="Content/Img/Icons/plus.png">
 										</a>
 
-										<a id="myBtn" class="Edit__Jobs" href="#">
+										<a class="Edit__Jobs myBtn" href="#">
 											<img class="Icon Icons__Edit" src="Content/Img/Icons/edit.png">
 										</a>
 
@@ -185,15 +220,19 @@
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+var btn = document.getElementsByClassName("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+for (var i = 0; i < btn.length; i++) {
+ 	btn[i].onclick = function() {
+	  modal.style.display = "block";
+	}
+ } 
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
@@ -206,4 +245,59 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+</script>
+
+<script>
+	function openNav() {
+		var menu = document.getElementById("Container__Menu");
+	  	var container = document.getElementById("Container__Prin");
+	  	var contMenu = document. getElementsByClassName("Cont__Menu");
+	  	var texto = document.getElementsByClassName("Menu__Txt");
+	  	var salida = document.getElementById("Txt__Exit");
+	  	var botonOpen = document.getElementById("openbtn");
+	  	var botonClose = document.getElementById("closebtn");
+
+	  	menu.style.width = "15%";
+	  	container.style.width = "85%";
+	  	container.style.left = "15%";
+	  	salida.style.display = "flex";
+	  	botonOpen.style.display = "none";
+	  	botonClose.style.display = "flex";
+
+
+	  	for (var i = 0; i < contMenu.length; i++){
+	  		contMenu[i].style.alignSelf = "flex-start";
+	  		contMenu[i].style.marginLeft = "2vh";
+	  	}	
+
+	  	for (var i = 0; i < texto.length; i++) {
+	  		texto[i].style.display = "flex";
+	  	}
+	}
+
+	function closeNav() {
+	  	var menu = document.getElementById("Container__Menu");
+	  	var container = document.getElementById("Container__Prin");
+	  	var contMenu = document. getElementsByClassName("Cont__Menu");
+	  	var texto = document.getElementsByClassName("Menu__Txt");
+	  	var salida = document.getElementById("Txt__Exit");
+	  	var botonOpen = document.getElementById("openbtn");
+	  	var botonClose = document.getElementById("closebtn");
+
+	  	menu.style.width = "5%";
+	  	container.style.width = "95%";
+	  	container.style.left = "5%";
+	  	salida.style.display = "none";
+	  	botonOpen.style.display = "flex";
+	  	botonClose.style.display = "none";
+
+	  	for (var i = 0; i < contMenu.length; i++){
+	  		contMenu[i].style.alignSelf = "center";
+	  		contMenu[i].style.marginLeft = "0vh";
+	  	}	
+
+	  	for (var i = 0; i < texto.length; i++) {
+	  		texto[i].style.display = "none";
+	  	}
+	}
 </script>

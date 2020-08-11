@@ -17,23 +17,48 @@ body
 
 a
     text-decoration: none
+
+button
+    outline: none
     
 .Container__Menu 
-    width: 4% 
-    height: 100vh  
+    width: 5% 
+    height: 100vh 
+    background: #C74733
+    display: flex
+    flex-direction: column
+    z-index: 1
     /* Esto lo mantendra en su sitio */
     position: fixed 
     top: 0 
     left: 0
 
 .Container__Prin 
-    width: 97% 
+    width: 95% 
     height: 100vh
-    overflow-y: hidden
+    background: #c74733
+    z-index: 0
     /* Esto equilibria lo del aside */
     position: relative 
     top: 0 
-    left: 3% 
+    left: 5% 
 
 .Cont_Prin
     display: flex
+    border-top-left-radius: 6vh
+    border-bottom-left-radius: 6vh
+    background: #eee
+    justify-content: center
+    align-items: center
+    height: 100vh
+
+.ImgTramaClock
+    position: absolute
+    z-index: 0
+    top: 0
+    right: 0
+    width: 100%
+    height: 100%
+    height: -webkit-fill-available
+    border-radius: 7vh
+    opacity: 0.4

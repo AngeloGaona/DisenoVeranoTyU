@@ -10,7 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!--div class="ImgTrama"></div--> 
 	<input type="checkbox" id="cerrar">
 		<div class="modal">
 			<div class="contenido">
@@ -25,45 +24,78 @@
 			</div>
 		</div>
 
+	<aside id="Container__Menu" class="Container__Menu">
 
-	<aside class="Container__Menu">
-    	<div class="vertical-menu">
-			<a class="Menu__IconUser" href="#">
-				<img class="Menu__IconUser" src="Content/Img/Icons/User.png">
-		 	</a>
-			<a class="Content__Img Estatic" href="Cronometro.html">
-				<img class="Menu__Img" src="Content/Img/Icons/menu-1.png">
-		  	</a>
-		  	<a class="Content__Img" href="Jobs.html">
-				<img class="Menu__Img" src="Content/Img/Icons/menu-2.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-3.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-4.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-5.png">
-		  	</a>
-		  	<a class="Content__Img" href="#">
-		  		<img  class="Menu__Img" src="Content/Img/Icons/menu-6.png">
-		  	</a>
+		<img class="Logo_Home" src="Content/Img/Logo_Home.png">
+    	
+    	<div class="Menu__">
+    		<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-1.png">
+				<p class="Menu__Txt">Inicio</p>	
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-2.png">
+				<p class="Menu__Txt">Reloj</p>
+			</a>
+
+			<a class="Cont__Menu"  href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-3.png">
+				<p class="Menu__Txt">Calendario</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-4.png">
+				<p class="Menu__Txt">Quien trabaja</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-5.png">
+				<p class="Menu__Txt">Entradas</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-6.png">
+				<p class="Menu__Txt">Tiempo libre</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-7.png">
+				<p class="Menu__Txt">Aprobaciones</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-8.png">
+				<p class="Menu__Txt">Factura</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-9.png">
+				<p class="Menu__Txt">Informes</p>
+			</a>
+
+			<a class="Cont__Menu" href="#">
+				<img class="ImgMenu-1" src="Content/Img/Icons/Menu-10.png">
+				<p class="Menu__Txt">Mi equipo</p>
+			</a>
+    	</div>
+
+    	<a class="Cont__Exit" href="#">
+    		<img class="ImgExit" src="Content/Img/Icons/Exit.png">
+    		<p id="Txt__Exit" class="Txt__Exit">SALIR</p>
+    	</a>
+		
+		<div class="Cont__btnMenu">
+			<button id="openbtn" class="openbtn" onclick="openNav()">»</button>
+			<button id="closebtn" class="closebtn" onclick="closeNav()">«</button>
 		</div>
   	</aside>
   	
-  	<div class="Container__Prin">
+  	<div id="Container__Prin" class="Container__Prin">
 		<div class="Cont_Prin">
-
-			<img class="Fondo_Home" src="Content/Img/Fondo_Home.png">
-			<img class="Logo_Home" src="Content/Img/Logo_Home.png">
-			<img class="Trama" src="Content/Img/TramaTwo.png">
-			<img class="Campana" src="Content/Img/Icons/Group40.png">
-			<img class="Chat" src="Content/Img/Icons/chat.png">
-			<img class="Ajust" src="Content/Img/Icons/Group4.png" >
-
+			<img class="ImgTramaClock" src="Content/Img/TramaTwo.png">
 			<div class="Jobs">
-				<p class="Jobs__Title">Proyectos</p>
+				<!-- p class="Jobs__Title">Proyectos</p>
 				<div class="Cont__Jobs">
 					<a class="Jobs__Subtitle" href="#">
 						Bancolombia
@@ -78,53 +110,47 @@
 					<a class="Jobs__Subtitle" href="#">
 						Codensa
 					</a>
+				</div> -->
+				<div class="Cont__UsuNew">
+					<p class="Txt__UsuNew">CREA TU PRIMER TRABAJO</p>
 				</div>
 			</div>
 
 			<div class="Cont__Clock">
 				<p class="txtTime">Horas</p>
-				<div class="Clock">
-					<p class="Clock__Actually">Actual</p>
-					<p class="Clock__Day">Día</p>
-					<p class="Clock__Week">Semana</p>
-				</div>
-				<br>
-				<div class="Clock__Time">
-					<p class="Time__Actually">12:00:00</p>
-					<p class="Time__Day">12:00:00</p>
-					<p class="Time__Week">12:00:00</p>				
-				</div>
-				<br>
-
-				<!--==========================RELOJ==========================-->
-
-				<div class="date">
-		    		<span id="weekDay" class="weekDay"></span>, 
-		    		<span id="day" class="day"></span> de
-				    <span id="month" class="month"></span> del
-				    <span id="year" class="year"></span>
-				</div>
 				<div class="clock">
 				    <span id="hours" class="hours"></span> :
 				    <span id="minutes" class="minutes"></span> :
 				    <span id="seconds" class="seconds"></span>
 				</div>
-				<br>
-				
-				<!--==========================RELOJ==========================-->
 
-				<button class="Boton Boton__Start">
+				<div class="Cont__BotonClock">
+					<button class="Boton Boton__Start">
 					<p class="txtBoton" >
 						<b> Iniciar </b> 
 						<br> reloj
 					</p>
-				</button>
-				<button class="Boton Boton__Pause" type="submit">
-					<p class="txtBoton"> Pausar </p>
-				</button>
+					</button>
+					<button class="Boton Boton__Pause" type="submit">
+						<p class="txtBoton"> Pausar </p>
+					</button>
+				</div>
+				
+				<div class="Cont__Clocktxt">
+					<div class="Clock">
+						<p class="Clock__Actually">Actual</p>
+						<p class="Clock__Day">Día</p>
+						<p class="Clock__Week">Semana</p>
+					</div>
+					<div class="Clock__Time">
+						<p class="Time__Actually">12:00:00</p>
+						<p class="Time__Day">12:00:00</p>
+						<p class="Time__Week">12:00:00</p>
+					</div>
+				</div>
 
 				<p class="txtClock">DESCRIBE TU ACTIVIDAD A REALIZAR</p>
-				<textarea class="Notes"></textarea>
+				<textarea class="Notes" placeholder="¿Qué estás haciendo?"></textarea>
 			</div>
 
 			<div class="Jobs__Prioritary">
@@ -133,26 +159,31 @@
 				</button>
 				
 				<div class="Cont__Jobs__Prioritary">
-					<p class="Jobs__Prioritary__Title">Tareas pioritarias</p>
-					<p class="Jobs__Prioritary__Date">[Fecha]</p>
-
+					<p class="Jobs__Prioritary__Title">Asignaciones</p>
+					<p class="Jobs__Prioritary__Date">
+						<span id="weekDay" class="weekDay"></span>, 
+				    	<span id="day" class="day"></span> de
+						<span id="month" class="month"></span> del
+						<span id="year" class="year"></span>
+					</p>
 					<div class="Cont__Jobs__Date">
-						<div class="JobOne">
+						<div class="Job">
 							<p class="Jobs__txt">Diseño de proyecto</p>
 							<p class="Jobs__txt">[Hora estipuladas]</p>
 						</div>
-						<br>
-						<div class="JobTwo">
+						<div class="Job">
 							<p class="Jobs__txt">Diseño de proyecto</p>
 							<p class="Jobs__txt">[Hora estipuladas]</p>
 						</div>
-						<br>
-						<div class="JobThree">
+						<div class="Job">
 							<p class="Jobs__txt">Diseño de proyecto</p>
 							<p class="Jobs__txt">[Hora estipuladas]</p>
 						</div>
-						<br>
-						<div class="JobFour">
+						<div class="Job">
+							<p class="Jobs__txt">Diseño de proyecto</p>
+							<p class="Jobs__txt">[Hora estipuladas]</p>
+						</div>
+						<div class="Job">
 							<p class="Jobs__txt">Diseño de proyecto</p>
 							<p class="Jobs__txt">[Hora estipuladas]</p>
 						</div>
@@ -225,4 +256,61 @@
 udateTime();
  
 setInterval(udateTime, 1000);
+</script>
+
+<script>
+	function openNav() {
+		var menu = document.getElementById("Container__Menu");
+	  	var container = document.getElementById("Container__Prin");
+	  	var contMenu = document. getElementsByClassName("Cont__Menu");
+	  	var texto = document.getElementsByClassName("Menu__Txt");
+	  	var salida = document.getElementById("Txt__Exit");
+	  	var botonOpen = document.getElementById("openbtn");
+	  	var botonClose = document.getElementById("closebtn");
+
+	  	menu.style.width = "15%";
+	  	container.style.width = "85%";
+	  	container.style.left = "15%";
+	  	salida.style.display = "flex";
+	  	botonOpen.style.display = "none";
+	  	botonClose.style.display = "flex";
+
+
+	  	for (var i = 0; i < contMenu.length; i++){
+	  		contMenu[i].style.alignSelf = "flex-start";
+	  		contMenu[i].style.marginLeft = "2vh";
+	  	}	
+
+	  	for (var i = 0; i < texto.length; i++) {
+	  		texto[i].style.display = "flex";
+	  	}
+	}
+
+	function closeNav() {
+	  	var menu = document.getElementById("Container__Menu");
+	  	var container = document.getElementById("Container__Prin");
+	  	var contMenu = document. getElementsByClassName("Cont__Menu");
+	  	var texto = document.getElementsByClassName("Menu__Txt");
+	  	var salida = document.getElementById("Txt__Exit");
+	  	var botonOpen = document.getElementById("openbtn");
+	  	var botonClose = document.getElementById("closebtn");
+
+	  	menu.style.width = "5%";
+	  	container.style.width = "95%";
+	  	container.style.left = "5%";
+	  	salida.style.display = "none";
+	  	botonOpen.style.display = "flex";
+	  	botonClose.style.display = "none";
+
+	  	for (var i = 0; i < contMenu.length; i++){
+	  		contMenu[i].style.alignSelf = "center";
+	  		contMenu[i].style.marginLeft = "0vh";
+	  	}	
+
+	  	for (var i = 0; i < texto.length; i++) {
+	  		texto[i].style.display = "none";
+	  	}
+
+
+	}
 </script>

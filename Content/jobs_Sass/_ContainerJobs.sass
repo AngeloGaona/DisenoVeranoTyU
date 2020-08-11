@@ -1,11 +1,10 @@
 .Jobss
     font-family: $Tipo_Fuente
     background: $Blanco
-    width: 178vh
-    min-height: 70vh
+    width: 88%
+    height: 75vh
     border-radius: 2vh
-    margin-top: 18vh
-    margin-left: 10vh
+    z-index: 1
 
 .Jobss__Title
     padding-left: 4vh
@@ -15,8 +14,15 @@
     color: #414D55
 
 .TopBar
-    display: inline-flex
-    padding-left: 4vh
+    display: flex
+    justify-content: space-between
+    margin-left: 4vh
+    margin-right: 4vh
+
+.Cont__Botonadd
+    display: flex
+    justify-content: center
+    align-self: center
 
 .Boton__add
     font-family: $Tipo_Fuente
@@ -32,7 +38,6 @@
 
 .SearchBar
     font-family: $Tipo_Fuente
-    margin-left: 83vh
     background: $Gris_Claro
     border-radius: 2vh
     padding: 1vh
@@ -62,11 +67,12 @@
 
 .Cont__Jobss
     background: #F5F2FB
-    min-height: 30vh
+    height: 32vh
     font-family: $Tipo_Fuente
     border-radius: 2vh
     padding: 2vh
     margin-right: 4vh
+    overflow-y: auto
 
 .TblTable
     width: 100%

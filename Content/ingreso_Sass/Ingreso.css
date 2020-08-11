@@ -2,7 +2,7 @@
 /*Fondo degrade */
 /*Estilos de letras */
 .Izquierda {
-  background: linear-gradient(#C74733, #581677);
+  background: #C84835;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   display: inline-block;
@@ -45,7 +45,10 @@
   border-bottom-right-radius: 15px;
   display: inline-block;
   width: 70vh;
-  height: 80vh; }
+  height: 80vh;
+  -webkit-box-shadow: 5px 1px 9px 5px #e5e7e9;
+  -moz-box-shadow: 5px 1px 9px 5px #e5e7e9;
+  box-shadow: 5px 1px 9px 5px #e5e7e9; }
   .Derecha .Derecha__txtGrande {
     font-family: Poppins;
     font-weight: bold;
@@ -121,10 +124,12 @@
 
 .Boton__twitter {
   background: #4286F5;
-  margin: 2.5vh 0 1vh 0; }
+  margin: 2.5vh 0 1vh 0;
+  opacity: 0.4; }
 
 .Boton__facebook {
-  background: #4167B2; }
+  background: #4167B2;
+  opacity: 0.4; }
 
 /*FIN BOTONES PROVICIONALES */
 @media screen and (min-width: 200px) and (max-width: 800px) {
@@ -152,11 +157,6 @@
 
   .Cont_txtResolution {
     display: block; } }
-body {
-  background-image: url(Img/Fondo.png);
-  background-size: 100% 100%;
-  background-attachment: fixed; }
-
 .Contenedor {
   min-height: 97vh;
   display: flex;

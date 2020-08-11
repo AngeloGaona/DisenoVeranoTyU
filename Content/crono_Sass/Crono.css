@@ -12,6 +12,7 @@
 
 .contenido {
   margin: auto;
+  padding-top: 5vh;
   margin-bottom: 60vh;
   width: 65%;
   height: 40%;
@@ -24,8 +25,7 @@
   font-weight: bold;
   color: #fff;
   float: right;
-  padding-right: 3vh;
-  padding-top: 3vh; }
+  padding-right: 3vh; }
   .Close:hover {
     cursor: pointer; }
 
@@ -59,111 +59,124 @@
   width: 50%;
   float: right; }
 
-.Fondo_Home {
-  width: 220vh;
-  position: absolute;
-  z-index: -1;
-  left: -99vh;
-  bottom: -26vh; }
-
 .Logo_Home {
   width: 12vh;
-  position: absolute;
-  margin-left: 5vh;
-  margin-top: 2vh; }
+  align-self: center; }
 
-.Trama {
-  width: 140vh;
-  height: 125vh;
-  z-index: -2;
-  position: absolute;
-  right: 0; }
+.Menu__ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4vh;
+  width: auto;
+  height: 70vh; }
 
-.Campana {
-  position: absolute;
-  right: 32vh;
-  top: 4vh;
-  width: 2.5vh; }
+.Cont__Menu {
+  display: flex;
+  align-items: center; }
 
-.Chat {
-  position: absolute;
-  right: 24vh;
-  top: 4.5vh;
-  width: 3vh; }
+.ImgMenu-1 {
+  width: 4vh; }
 
-.Ajust {
-  position: absolute;
-  right: 16vh;
-  top: 4.5vh;
-  width: 2.5vh; }
-
-.vertical-menu {
-  background: #fff;
-  width: 7vh;
-  min-height: 100vh;
-  text-align: center; }
-
-.vertical-menu a {
-  display: block;
-  text-decoration: none; }
-
-.Content__Img {
-  padding-top: 2vh;
-  padding-bottom: 2vh; }
-  .Content__Img:hover {
-    background-color: #C74733;
-    width: 8vh;
-    border-top-right-radius: 1vh;
-    border-bottom-right-radius: 1vh; }
-
-.Estatic {
-  background: #C74733;
-  width: 8vh;
-  border-top-right-radius: 1vh;
-  border-bottom-right-radius: 1vh; }
-
-.Menu__IconUser {
-  margin-bottom: 10vh; }
-  .Menu__IconUser:hover {
-    background: #fff _ !important; }
-
-.Menu__Img {
-  width: 3vh;
-  height: 3vh; }
-
-.Menu__IconUser {
-  width: 100%;
-  text-align: center; }
-
-.date {
+.Menu__Txt {
   font-family: Poppins;
-  font-size: 2vh;
-  font-weight: bold;
-  background: #ccc;
-  width: 36vh;
-  margin-left: 4vh;
-  opacity: 0.6;
-  padding: 2vh;
-  border-top-left-radius: 2vh;
-  border-top-right-radius: 2vh;
-  margin-bottom: 1vh; }
+  color: #fff;
+  font-size: 3vh;
+  margin: 0;
+  margin-left: 2vh;
+  display: none; }
+
+.Cont__Exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 4vh; }
+
+.ImgExit {
+  width: 4vh; }
+
+.Txt__Exit {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 3vh;
+  margin-left: 2vh;
+  display: none; }
+
+.Cont__btnMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: -35px;
+  top: 0;
+  z-index: 1;
+  border: none; }
+
+.openbtn {
+  font-family: Poppins;
+  font-size: 7vh;
+  cursor: pointer;
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 8vh;
+  height: 8vh;
+  border: none;
+  border-radius: 15vh; }
+
+.closebtn {
+  font-family: Poppins;
+  font-size: 7vh;
+  cursor: pointer;
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 8vh;
+  height: 8vh;
+  border: none;
+  border-radius: 15vh;
+  display: none; }
 
 .clock {
   font-family: Poppins;
-  font-size: 4vh;
-  font-weight: bold;
-  background: #ccc;
+  font-size: 5vh;
+  background: #F7F8F8;
   width: 36vh;
   margin-left: 4vh;
   opacity: 0.6;
   padding: 2vh;
   border-bottom-left-radius: 2vh;
   border-bottom-right-radius: 2vh;
-  margin-bottom: 1vh; }
+  margin-bottom: 1vh;
+  -webkit-box-shadow: 3px 2px 10px 2px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px 2px 10px 2px rgba(0, 0, 0, 0.16);
+  box-shadow: 3px 2px 10px 2px rgba(0, 0, 0, 0.16); }
+
+.hours {
+  font-weight: bold; }
+
+.minutes {
+  font-weight: bold; }
+
+.Cont__BotonClock {
+  display: flex;
+  justify-content: center; }
 
 .Boton__Start {
-  background: #51197C;
-  border: 1px solid #51197C;
+  background: #856286;
+  border: none;
   border-radius: 50%;
   width: 21vh;
   height: 21vh;
@@ -176,12 +189,16 @@
     cursor: pointer; }
 
 .Boton__Pause {
-  background: #FFAA00;
-  border: 1px solid #FFAA00;
+  background: #EB7411;
+  border: none;
   border-radius: 50%;
   padding: 3vh;
   width: 15vh;
-  height: 15vh; }
+  height: 15vh;
+  display: flex;
+  align-self: flex-end;
+  position: relative;
+  right: 8%; }
   .Boton__Pause .txtBoton {
     color: #fff;
     font-family: Poppins;
@@ -189,53 +206,75 @@
   .Boton__Pause:hover {
     cursor: pointer; }
 
-.txtClock {
-  text-align: left;
-  margin-left: 2vh; }
-
 .Cont__Clock {
   background: #fff;
   font-family: Poppins;
   width: 50vh;
+  height: 100vh;
   border-radius: 2vh;
   text-align: center;
-  margin-top: 22vh;
-  margin-left: 6vh; }
+  display: flex;
+  flex-direction: column;
+  z-index: 1; }
+
+.Cont__Clocktxt {
+  background: #F7F8F8;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-top: 3vh;
+  margin-left: 3vh;
+  margin-right: 3vh;
+  border-radius: 2vh;
+  -webkit-box-shadow: 3px 2px 10px 2px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 3px 2px 10px 2px rgba(0, 0, 0, 0.16);
+  box-shadow: 3px 2px 10px 2px rgba(0, 0, 0, 0.16); }
 
 .Clock {
-  display: inline-flex; }
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+  font-weight: bold; }
 
 .Clock__Time {
-  display: inline-flex; }
+  display: flex;
+  justify-content: space-evenly; }
 
 .txtTime {
   color: #414D55;
   font-size: 5vh;
   padding-top: 1vh;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 0;
+  margin-top: 5vh; }
 
 .Clock__Actually {
-  font-size: 2.5vh; }
+  font-size: 2.5vh;
+  margin: 0; }
 
 .Clock__Day {
-  margin-left: 8vh;
-  margin-right: 8vh;
+  margin: 0;
   font-size: 2.5vh; }
 
 .Clock__Week {
+  margin: 0;
   text-align: right;
   font-size: 2.5vh; }
 
 .Time__Actually {
+  margin: 0;
   font-size: 3vh; }
 
 .Time__Day {
-  margin-left: 4vh;
-  margin-right: 4vh;
+  margin: 0;
   font-size: 3vh; }
 
 .Time__Week {
+  margin: 0;
   font-size: 3vh; }
+
+.txtClock {
+  font-family: Poppins;
+  font-size: 2.4vh; }
 
 .Notes {
   background: #E4EAF0;
@@ -243,17 +282,25 @@
   border-radius: 2vh;
   font-family: Poppins;
   width: 42vh;
-  padding: 2vh; }
+  height: 15vh;
+  padding: 2vh;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  resize: none; }
 
 .Boton__Create {
   font-family: Poppins;
-  font-size: 2vh;
+  font-size: 2.4vh;
   background: #148B83;
   width: 50vh;
   height: 7vh;
   border-radius: 15vh;
   border: 1px solid #148B83;
-  margin-bottom: 4vh; }
+  margin-bottom: 4vh;
+  display: none; }
   .Boton__Create:hover {
     cursor: pointer; }
 
@@ -261,24 +308,34 @@
   color: #fff; }
 
 .Jobs__Prioritary {
-  height: 90vh;
-  margin-top: 20vh;
-  margin-left: 36vh; }
+  height: auto;
+  z-index: 1; }
 
 .Cont__Jobs__Prioritary {
   background: #fff;
   width: 50vh;
-  height: 68vh;
-  border-radius: 5vh;
+  height: 87vh;
+  border-radius: 2vh;
   padding: 1vh;
   overflow-y: scroll; }
+
+.Cont__Jobs__Prioritary::-webkit-scrollbar {
+  width: 1vh; }
+
+.Cont__Jobs__Prioritary::-webkit-scrollbar-track {
+  border-radius: 10vh;
+  background-color: #F8F8F8; }
+
+.Cont__Jobs__Prioritary::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, #6F52ED, #6F52ED);
+  border-radius: 10vh; }
 
 .Jobs__Prioritary__Title {
   padding-top: 1vh;
   font-family: Poppins;
   font-size: 4vh;
-  font-weight: bold;
-  margin-left: 2vh; }
+  text-align: center;
+  font-weight: bold; }
 
 .Jobs__Prioritary__Date {
   padding-top: 1vh;
@@ -289,67 +346,31 @@
 .Jobs__txt {
   font-family: Poppins;
   font-size: 2.2vh;
-  font-weight: bold;
   margin-left: 2vh;
   opacity: 1; }
 
-.JobOne {
-  background: rgba(127, 86, 180, 0.48);
+.Job {
+  background: #F5F2FB;
   border-radius: 1vh;
-  margin-left: 3vh;
-  margin-right: 3vh;
-  padding: 1vh; }
-
-.JobTwo {
-  background: rgba(255, 110, 110, 0.48);
-  border-radius: 1vh;
-  margin-left: 3vh;
-  margin-right: 3vh;
-  padding: 1vh; }
-
-.JobThree {
-  background: rgba(43, 200, 216, 0.48);
-  border-radius: 1vh;
-  margin-left: 3vh;
-  margin-right: 3vh;
-  padding: 1vh; }
-
-.JobFour {
-  background: rgba(127, 86, 180, 0.48);
-  border-radius: 1vh;
+  margin-top: 2vh;
   margin-left: 3vh;
   margin-right: 3vh;
   padding: 1vh; }
 
 .Jobs {
-  background: #fff;
+  background: transparent;
+  border: #D4D4D4 2vh dashed;
   width: 40vh;
   height: 50vh;
   border-radius: 2vh;
   text-align: center;
-  margin-top: 22vh;
-  margin-left: 6vh; }
+  z-index: 1; }
 
-.Jobs__Title {
-  padding-top: 1vh;
+.Txt__UsuNew {
   font-family: Poppins;
-  color: #414D55;
-  font-size: 5vh;
-  font-weight: bold; }
-
-.Cont__Jobs {
-  background: #E3E8EB;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-bottom: 1vh;
-  border-radius: 1vh;
-  padding: 2vh; }
-
-.Jobs__Subtitle {
-  font-family: Poppins;
-  color: #A0A0A0;
-  font-size: 3vh;
-  text-decoration: none; }
+  font-size: 4.5vh;
+  font-weight: Bold;
+  color: #D4D4D4; }
 
 #quiz-time-left {
   height: 100%;
@@ -385,32 +406,46 @@ a {
 button {
   outline: none; }
 
-/*.ImgTrama
- * position: absolute
- * min-width: 209vh
- * min-height: 119vh
- * background-repeat: no-repeat 
- * background: url(Img/TramaTwo.png) no-repeat center center fixed 
- * background-size: 100% 100% 
- * z-index: -2 */
 .Container__Menu {
-  width: 4%;
+  width: 5%;
   height: 100vh;
+  background: #C74733;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
   /* Esto lo mantendra en su sitio */
   position: fixed;
   top: 0;
   left: 0; }
 
 .Container__Prin {
-  width: 97%;
+  width: 95%;
   height: 125vh;
-  overflow-y: hidden;
+  background: #c74733;
+  z-index: 0;
   /* Esto equilibria lo del aside */
   position: relative;
   top: 0;
-  left: 3%; }
+  left: 5%; }
 
 .Cont_Prin {
-  display: flex; }
+  display: flex;
+  border-top-left-radius: 6vh;
+  border-bottom-left-radius: 6vh;
+  background: #eee;
+  justify-content: space-around;
+  padding-top: 15vh;
+  padding-bottom: 10vh; }
+
+.ImgTramaClock {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
+  border-radius: 7vh;
+  opacity: 0.4; }
 
 /*# sourceMappingURL=Crono.css.map */

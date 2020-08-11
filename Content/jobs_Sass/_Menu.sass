@@ -1,79 +1,91 @@
 @import _Variables.sass
 
-.Fondo_Home
-    width: 220vh
-    position: absolute
-    z-index: -1
-    left: -99vh
-    bottom: -26vh
-
 .Logo_Home
     width: 12vh
+    align-self: center
+
+.Menu__
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    margin-top: 4vh
+    width: auto
+    height: 70vh    
+
+.Cont__Menu
+    display: flex
+    align-items: center
+
+.ImgMenu-1
+    width: 4vh
+
+.Menu__Txt
+    font-family: $Tipo_Fuente
+    color: $Blanco
+    font-size: 3vh
+    margin: 0
+    margin-left: 2vh
+    display: none
+
+.Cont__Exit
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    position: absolute 
+    bottom: 0 
+    left: 0 
+    right: 0 
+    margin-bottom: 4vh 
+
+.ImgExit
+    width: 4vh
+
+.Txt__Exit
+    font-family: $Tipo_Fuente
+    color: $Blanco
+    font-size: 3vh
+    margin-left: 2vh
+    display: none
+
+.Cont__btnMenu
+    display: flex
+    justify-content: center
+    align-items: center
     position: absolute
-    margin-left: 5vh
-    margin-top: 2vh
+    bottom: 0
+    right: -35px
+    top: 0
+    z-index: 1
+    border: none
 
-.Trama
-    width: 140vh
-    height: 125vh
-    z-index: -2
-    position: absolute
-    right: 0
-
-.Campana
-    position: absolute
-    right: 32vh
-    top: 4vh
-    width: 2.5vh
-
-.Chat
-    position: absolute
-    right: 24vh
-    top: 4.5vh
-    width: 3vh
-
-.Ajust
-    position: absolute
-    right: 16vh
-    top: 4.5vh
-    width: 2.5vh
-
-.vertical-menu  
-    background: $Blanco
-    width: 7vh
-    min-height: 100vh
-    text-align: center
-
-.vertical-menu a  
-    display: block  
-    text-decoration: none 
-
-.Content__Img
-    padding-top: 2vh
-    padding-bottom: 2vh
-    
-    &:hover  
-        background-color: $Rojo_Verano
-        width: 8vh
-        border-top-right-radius: 1vh
-        border-bottom-right-radius: 1vh
-
-.Estatic
-    background: $Rojo_Verano
+.openbtn 
+    font-family: $Tipo_Fuente
+    font-size: 7vh
+    cursor: pointer
+    background-color: #eee
+    color: #000
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
     width: 8vh
-    border-top-right-radius: 1vh
-    border-bottom-right-radius: 1vh
+    height: 8vh
+    border: none
+    border-radius: 15vh
 
-.Menu__IconUser
-    margin-bottom: 10vh
-    
-    &:hover
-        background: $Blanco _!important
-
-.Menu__Img
-    width: 3vh
-    height: 3vh
-
-.Menu__IconUser
-    width: 100%
-    text-align: center
+.closebtn
+    font-family: $Tipo_Fuente
+    font-size: 7vh
+    cursor: pointer
+    background-color: #eee
+    color: #000
+    display: flex
+    justify-content: center
+    align-items: center
+    align-self: center
+    width: 8vh
+    height: 8vh
+    border: none
+    border-radius: 15vh
+    display: none

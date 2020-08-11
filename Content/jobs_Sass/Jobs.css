@@ -1,78 +1,92 @@
-.Fondo_Home {
-  width: 220vh;
-  position: absolute;
-  z-index: -1;
-  left: -99vh;
-  bottom: -26vh; }
-
 .Logo_Home {
   width: 12vh;
+  align-self: center; }
+
+.Menu__ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4vh;
+  width: auto;
+  height: 70vh; }
+
+.Cont__Menu {
+  display: flex;
+  align-items: center; }
+
+.ImgMenu-1 {
+  width: 4vh; }
+
+.Menu__Txt {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 3vh;
+  margin: 0;
+  margin-left: 2vh;
+  display: none; }
+
+.Cont__Exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  margin-left: 5vh;
-  margin-top: 2vh; }
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 4vh; }
 
-.Trama {
-  width: 140vh;
-  height: 125vh;
-  z-index: -2;
+.ImgExit {
+  width: 4vh; }
+
+.Txt__Exit {
+  font-family: Poppins;
+  color: #fff;
+  font-size: 3vh;
+  margin-left: 2vh;
+  display: none; }
+
+.Cont__btnMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  right: 0; }
+  bottom: 0;
+  right: -35px;
+  top: 0;
+  z-index: 1;
+  border: none; }
 
-.Campana {
-  position: absolute;
-  right: 32vh;
-  top: 4vh;
-  width: 2.5vh; }
-
-.Chat {
-  position: absolute;
-  right: 24vh;
-  top: 4.5vh;
-  width: 3vh; }
-
-.Ajust {
-  position: absolute;
-  right: 16vh;
-  top: 4.5vh;
-  width: 2.5vh; }
-
-.vertical-menu {
-  background: #fff;
-  width: 7vh;
-  min-height: 100vh;
-  text-align: center; }
-
-.vertical-menu a {
-  display: block;
-  text-decoration: none; }
-
-.Content__Img {
-  padding-top: 2vh;
-  padding-bottom: 2vh; }
-  .Content__Img:hover {
-    background-color: #C74733;
-    width: 8vh;
-    border-top-right-radius: 1vh;
-    border-bottom-right-radius: 1vh; }
-
-.Estatic {
-  background: #C74733;
+.openbtn {
+  font-family: Poppins;
+  font-size: 7vh;
+  cursor: pointer;
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
   width: 8vh;
-  border-top-right-radius: 1vh;
-  border-bottom-right-radius: 1vh; }
+  height: 8vh;
+  border: none;
+  border-radius: 15vh; }
 
-.Menu__IconUser {
-  margin-bottom: 10vh; }
-  .Menu__IconUser:hover {
-    background: #fff _ !important; }
-
-.Menu__Img {
-  width: 3vh;
-  height: 3vh; }
-
-.Menu__IconUser {
-  width: 100%;
-  text-align: center; }
+.closebtn {
+  font-family: Poppins;
+  font-size: 7vh;
+  cursor: pointer;
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 8vh;
+  height: 8vh;
+  border: none;
+  border-radius: 15vh;
+  display: none; }
 
 .Icons__Ubication {
   width: 4vh;
@@ -170,20 +184,20 @@
   display: none;
   position: absolute;
   z-index: 1;
-  top: 18vh;
-  width: 178vh;
-  height: 70vh;
+  top: 12vh;
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.4); }
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2vh;
+  width: 88%;
+  height: 76%; }
 
 /* Modal Content */
 .modal-content {
   font-family: Poppins;
   background-color: #fefefe;
-  margin-left: 83vh;
   padding: 20px;
-  height: 65vh;
-  width: 90vh; }
+  height: 92%;
+  margin-left: 50%; }
 
 /* The Close Button */
 .close {
@@ -270,11 +284,10 @@
 .Jobss {
   font-family: Poppins;
   background: #fff;
-  width: 178vh;
-  min-height: 70vh;
+  width: 88%;
+  height: 75vh;
   border-radius: 2vh;
-  margin-top: 18vh;
-  margin-left: 10vh; }
+  z-index: 1; }
 
 .Jobss__Title {
   padding-left: 4vh;
@@ -284,8 +297,15 @@
   color: #414D55; }
 
 .TopBar {
-  display: inline-flex;
-  padding-left: 4vh; }
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4vh;
+  margin-right: 4vh; }
+
+.Cont__Botonadd {
+  display: flex;
+  justify-content: center;
+  align-self: center; }
 
 .Boton__add {
   font-family: Poppins;
@@ -301,7 +321,6 @@
 
 .SearchBar {
   font-family: Poppins;
-  margin-left: 83vh;
   background: #F8F8F8;
   border-radius: 2vh;
   padding: 1vh; }
@@ -331,11 +350,12 @@
 
 .Cont__Jobss {
   background: #F5F2FB;
-  min-height: 30vh;
+  height: 32vh;
   font-family: Poppins;
   border-radius: 2vh;
   padding: 2vh;
-  margin-right: 4vh; }
+  margin-right: 4vh;
+  overflow-y: auto; }
 
 .TblTable {
   width: 100%;
@@ -368,24 +388,49 @@ body {
 a {
   text-decoration: none; }
 
+button {
+  outline: none; }
+
 .Container__Menu {
-  width: 4%;
+  width: 5%;
   height: 100vh;
+  background: #C74733;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
   /* Esto lo mantendra en su sitio */
   position: fixed;
   top: 0;
   left: 0; }
 
 .Container__Prin {
-  width: 97%;
+  width: 95%;
   height: 100vh;
-  overflow-y: hidden;
+  background: #c74733;
+  z-index: 0;
   /* Esto equilibria lo del aside */
   position: relative;
   top: 0;
-  left: 3%; }
+  left: 5%; }
 
 .Cont_Prin {
-  display: flex; }
+  display: flex;
+  border-top-left-radius: 6vh;
+  border-bottom-left-radius: 6vh;
+  background: #eee;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.ImgTramaClock {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
+  border-radius: 7vh;
+  opacity: 0.4; }
 
 /*# sourceMappingURL=Jobs.css.map */
